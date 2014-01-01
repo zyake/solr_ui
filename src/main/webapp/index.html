@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <script src="js/external/jquery-1.8.3.js"></script>
+  <script src="js/external/underscore.js"></script>
+  <script src="js/external/backbone.js"></script>
+  <script src="js/model/StreamContentModel.js"></script>
+  <script src="js/util/ComponentRepository.js"></script>
+  <script src="js/view/SearchBox.js"></script>
+  <script src="js/view/StreamContent.js"></script>
+  <script src="js/configure/IndexPageConfigurator.js"></script>
+  <script>
+      $(function() {
+        new IndexPageConfigurator().configure();
+      });
+  </script>
+  <meta charset="utf-8"/>
+  <style type="text/css">
+      body {
+       background-color: gray;
+       color: white;
+      }
+
+      #left {
+       position: relative;
+       width: 20%;
+       height: 80%;
+       border: 1px solid #585858;
+       background-color: #585858;
+       float: left;
+       border-radius: 5px;
+       color: white;
+      }
+
+      #right {
+       position: relative;
+       left: 30px;
+       width: 70%;
+       height: 80%;
+       float: left;
+       padding: 5px;
+      }
+
+      .document {
+       border: 1px solid #585858;
+       background-color: #585858;
+       margin-bottom: 1em;
+       padding: 0.5em;
+       border-radius: 5px;
+       color: white;
+      }
+
+     .document em {
+       font-weight: bold;
+       color: red;
+     }
+
+      .title {
+       font-weight: bold;
+      }
+
+     #bottom {
+       margin-top: 1em;
+     }
+
+     .result-body {
+       background-color: gray;
+     }
+  </style>
+ </head>
+ <body>
+  <div id="top">
+      <h1>Solr UI</h1>
+      <div id="searchBox"><input class="input" style="width: 30em;" type="text"/><input class="submit" value="検索" type="button"/><span class="resultSummary"></span><span><img class="loading" style="display: none;" src="image/loading.gif"></span></div>
+
+  </div>
+  <div id="bottom">
+   <div id="left">
+    <h2>Field Facets</h2>
+    <div id="field_facets">
+        <dl>
+            <dt>content_type</dt>
+            <dd>application/pdf</dd>
+            <dd>application/excel</dd>
+            <dd>application/word</dd>
+        </dl>
+    </div>
+    <h2>Categories</h2>
+    <div id="categories">
+        <dl>
+            <dt>
+                <dd>内部設計書</dd>
+                <dd>外部設計書</dd>
+                <dd>レビュー済み</dd>
+            </dt>
+        </dl>
+    </div>
+   </div>
+   <div id="right">
+    <div class="content">
+    </div>
+　 <a class="retrieveLink" href="" onclick="return false">続きを見る</a><span><img class="loading" style="display: none;" src="image/loading.gif"></span>
+   </div>
+  </div>
+ </body>
+</html>
