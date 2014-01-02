@@ -1,4 +1,4 @@
-package my.apps.docsearchui.search;
+package my.apps.docsearchui.data.search;
 
 import my.apps.docsearchui.domain.Document;
 

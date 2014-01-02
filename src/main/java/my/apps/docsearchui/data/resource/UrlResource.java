@@ -1,4 +1,4 @@
-package my.apps.docsearchui.resource;
+package my.apps.docsearchui.data.resource;
 
 import java.io.InputStream;
 

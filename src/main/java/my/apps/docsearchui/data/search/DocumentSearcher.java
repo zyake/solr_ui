@@ -1,8 +1,9 @@
-package my.apps.docsearchui.search;
+package my.apps.docsearchui.data.search;
 
 import my.apps.docsearchui.domain.Document;
+import my.apps.docsearchui.domain.SearchResult;
 
-import java.util.List;
+import java.util.Map;
 
 public interface DocumentSearcher {
 
@@ -13,4 +14,6 @@ public interface DocumentSearcher {
     SearchResult searchDocuments(String searchPhrase, int start, int rows);
 
     Document getDocument(String id);
+
+    Map<String, Integer> getFacets(String facetField);
 }

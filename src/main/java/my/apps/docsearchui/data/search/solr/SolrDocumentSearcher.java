@@ -1,33 +1,54 @@
-package my.apps.docsearchui.search.solr;
+package my.apps.docsearchui.data.search.solr;
 
+import my.apps.docsearchui.config.Configuration;
+import my.apps.docsearchui.config.ConfigurationRepository;
+import my.apps.docsearchui.config.ConfigurationUpdateListener;
 import my.apps.docsearchui.domain.Document;
-import my.apps.docsearchui.search.DocumentSearcher;
-import my.apps.docsearchui.search.SearchException;
-import my.apps.docsearchui.search.SearchResult;
+import my.apps.docsearchui.domain.DocumentSearcher;
+import my.apps.docsearchui.domain.SearchException;
+import my.apps.docsearchui.domain.SearchResult;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.client.solrj.SolrServerException;
+import org.apache.solr.client.solrj.impl.HttpSolrServer;
+import org.apache.solr.client.solrj.response.FacetField;
 import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.common.SolrDocument;
+import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-public class SolrDocumentSearcher implements DocumentSearcher {
+public class SolrDocumentSearcher implements DocumentSearcher, ConfigurationUpdateListener {
 
-    private final SolrServer solrServer;
+    private static final Logger LOGGER = Logger.getLogger(SolrDocumentSearcher.class.getName());
 
-    public SolrDocumentSearcher(SolrServer solrServer) {
-        this.solrServer = solrServer;
-    }
+    @Autowired(required = true)
+    private ConfigurationRepository configurationRepository;
+
+    private volatile SolrServer solrServer;
 
     @Override
     public void init() {
+        if ( LOGGER.isLoggable(Level.INFO) ) {
+            LOGGER.info("start initializing...: " + configurationRepository.toString());
+        }
+
+        configurationRepository.addListener(this);
+
+        Configuration configuration = configurationRepository.getConfiguration("global", "solr_url");
+
+        renewSolrServer(configuration.getConfigValue());
+
+        if ( LOGGER.isLoggable(Level.INFO) ) {
+            LOGGER.info("end initializing: solr url=" + configuration.getConfigValue());
+        }
     }
 
     @Override
     public void finish() {
+        configurationRepository.deleteListener(this);
         solrServer.shutdown();
     }
 
@@ -68,6 +89,21 @@ public class SolrDocumentSearcher implements DocumentSearcher {
         Document document = parseDocument(queryResponse.getResults().get(0), queryResponse);
 
         return document;
+    }
+
+    @Override
+    public Map<String, Integer> getFacets(String facetField) {
+        SolrQuery solrQuery = new SolrQuery("*:*")
+                .addFacetField(facetField)
+                .addFilterQuery("id");
+
+        QueryResponse response = query(solrQuery);
+        Map<String, Integer> facets = new HashMap<>();
+        for ( FacetField field : response.getFacetFields() ) {
+            facets.put(field.getName(), field.getValueCount());
+        }
+
+        return facets;
     }
 
     protected Document parseDocument(SolrDocument doc, QueryResponse res) {
@@ -122,4 +158,22 @@ public class SolrDocumentSearcher implements DocumentSearcher {
 
         return obj.toString();
     }
+
+    @Override
+    public void update(Configuration oldConfiguration, Configuration newConfigurations) {
+        String category = newConfigurations.getCategory();
+        String configValue = newConfigurations.getConfigValue();
+        boolean isTarget = "global".equals(category) && "solr_url".equals(configValue);
+        if ( ! isTarget ) {
+            return;
+        }
+
+        SolrServer tmpServer = solrServer;
+        renewSolrServer(configValue);
+        tmpServer.shutdown();
+    }
+
+   protected void renewSolrServer(String solrUrl) {
+       solrServer = new HttpSolrServer(solrUrl);
+   }
 }
