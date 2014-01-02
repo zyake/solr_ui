@@ -1,6 +1,6 @@
 package my.apps.docsearchui.controllers;
 
-import my.apps.docsearchui.resource.Resource;
+import my.apps.docsearchui.data.resource.Resource;
 import my.apps.docsearchui.service.DocumentSearchService;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;

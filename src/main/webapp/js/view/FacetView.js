@@ -1,47 +1,42 @@
  /**
-  * 単一のテキストボックスと送信ボタン、結果のサマリ表示エリアを持つ検索ボックス。
+  * Facetの表示、管理を行うビュー。
   */
- var SearchBox = Backbone.View.extend({
+ var FacetView = Backbone.View.extend({
 
  	initialize: function(args) {
-		this.inputBox = args.inputBox;
-		this.resultSummary = args.resultSummary;
-		this.submitButton = args.submitButton;
+		this.facet = args.facet;
 		this.loadingImg = args.loadingImg;
-		this.model = args.model;
-		this.submitting = false;
-
+		this.facetContentModel = args.model;
+        this.streamContentModel = args.streamModel;
         var me = this;
-        this.submitButton.addEventListener("click", function() { me.submit() });
-        this.listenTo(this.model, "retrieve.success", function(xhr) { me.enableSubmitting(xhr) });
+        this.listenTo(this.facetContentModel, "retrieve.success", function(xhr) { me.enableFacets(xhr) });
+        this.facetContentModel.retrieveContent();
  	},
 
- 	submit: function() {
- 	    if ( this.submitting ) {
- 	        return;
- 	    }
- 	    this.disableSubmitting();
-        this.model.retrieveContent(this.inputBox.value);
- 	},
-
- 	enableSubmitting: function(xhr) {
- 	    this.submitting = false;
- 	    this.submitButton.style.disable = false;
- 	    this.inputBox.style.disable= false;
-
+ 	enableFacets: function(xhr) {
         this.loadingImg.style.display = "none";
- 	    var contentCount = xhr.getResponseHeader("Content-Count");
- 	    var contentFound = xhr.getResponseHeader("Content-Found");
- 	    var timeMillsec = xhr.getResponseHeader("Search-Time");
- 	    this.resultSummary.innerHTML = "検索が完了しました.(マッチしたもの=" + contentFound +
- 	    ", 取得したもの=" + contentCount + ", 検索時間=" + timeMillsec + "ms)";
- 	},
+ 	    this.facet.innerHTML = xhr.responseText;
 
- 	disableSubmitting: function() {
- 	    this.submitting = true;
- 	    this.submitButton.style.disable = true;
- 	    this.inputBox.style.disable= true;
- 	    this.loadingImg.style.display = "inline";
- 	    this.resultSummary.innerHTML= "検索中です...";
- 	},
+ 	    var me = this;
+        var actionButtons = this.facet.querySelectorAll(".actionButton");
+        for( key = 0 ; key < actionButtons.length ; key ++ ) {
+            var actionButton = actionButtons[key];
+            actionButton.isAppended = false;
+            actionButton.addButton = actionButton.querySelector(".addImg");
+            actionButton.stopButton = actionButton.querySelector(".stopImg");
+            actionButtons[key].addEventListener("click", function() {
+                if ( this.isAppended ) {
+                    this.isAppended = false;
+                    this.stopButton.style.display = "none";
+                    this.addButton.style.display = "inline"
+                   delete me.streamContentModel.getFQueries()[this.attributes["field"].nodeValue];
+                } else {
+                    this.isAppended = true;
+                    this.stopButton.style.display = "inline";
+                    this.addButton.style.display = "none"
+                    me.streamContentModel.getFQueries()[this.attributes["field"].nodeValue] = this.attributes["facet"].nodeValue;
+                }
+            });
+        }
+ 	}
 });

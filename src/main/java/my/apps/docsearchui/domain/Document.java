@@ -2,6 +2,9 @@ package my.apps.docsearchui.domain;
 
 import java.util.Date;
 
+/**
+ * 検索サーバに登録されたドキュメント。
+ */
 public class Document {
 
     private String title;

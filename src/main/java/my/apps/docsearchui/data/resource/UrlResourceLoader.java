@@ -1,7 +1,7 @@
 package my.apps.docsearchui.data.resource;
 
 import my.apps.docsearchui.domain.Document;
-import my.apps.docsearchui.domain.SearchException;
+import my.apps.docsearchui.data.search.SearchException;
 
 import java.io.IOException;
 import java.io.InputStream;

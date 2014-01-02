@@ -1,6 +1,6 @@
 package my.apps.docsearchui.controllers;
 
-import my.apps.docsearchui.search.SearchResult;
+import my.apps.docsearchui.data.search.SearchResult;
 import my.apps.docsearchui.service.DocumentSearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,8 +21,9 @@ public class SearchDocumentController {
     @RequestMapping( method = RequestMethod.GET )
     public ModelAndView searchDocument(@RequestParam("query") String query,
                                        @RequestParam("start") int start, @RequestParam("rows") int rows,
+                                       @RequestParam(value = "fq", required = false) String[] fqueries,
                                        HttpServletResponse response) {
-        SearchResult searchResult = searchService.searchDocuments(query, start, rows);
+        SearchResult searchResult = searchService.searchDocuments(query, start, rows, fqueries);
         response.setHeader("Content-Count", Integer.toString(searchResult.getDocuments().size()));
         response.setHeader("Content-Found", Integer.toString(searchResult.getNumFound()));
         response.setHeader("Search-Time", Integer.toString(searchResult.getTimeMillsec()));

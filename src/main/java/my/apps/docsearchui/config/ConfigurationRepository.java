@@ -1,11 +1,34 @@
 package my.apps.docsearchui.config;
 
+import org.apache.commons.collections.Predicate;
+
+import java.util.List;
+
+
 /**
- * Created with IntelliJ IDEA.
- * User: zyake
- * Date: 14/01/02
- * Time: 11:58
- * To change this template use File | Settings | File Templates.
+ * アプリの設定を管理するためのリポジトリ。
+ *
+ * 取得する設定は、その時リポジトリで管理している設定の「ビュー」であり、
+ * 取得したビューをクライアントで操作しても、他のオブジェクトに反映することはできない。
+ * 設定の更新に成功した場合は、登録されているリスナに通知される。
  */
-public class ConfigurationRepository {
+public interface ConfigurationRepository {
+
+    Configuration getConfiguration(String category, String configKey);
+
+    List<Configuration> listConfigurations(Predicate predicate);
+
+    List<String> listCategories();
+
+    /**
+     * 設定値を更新します。
+     *
+     * @param configuration
+     * @return
+     */
+    Configuration updateConfiguration(Configuration configuration);
+
+    void addListener(ConfigurationUpdateListener listener);
+
+    void deleteListener(ConfigurationUpdateListener listener);
 }

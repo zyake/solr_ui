@@ -2,71 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="857511f7-20d7-40ff-a77b-662d7e7a0104" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/image/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/util/ComponentRepository.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DefaultDocumentSearchService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/domain/Document.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DocumentSearchService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/DocumentSearcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/DocumentSearcherFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/DownloadDocumentController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/solr/HttpSolrDocumentSearcherFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/configure/IndexPageConfigurator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/resource/Resource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/resource/ResourceException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/resource/ResourceLoader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/view/SearchBox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/SearchDocumentController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/SearchException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/SearchResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/solr/SolrDocumentSearcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/view/StreamContent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/resource/UrlResource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/resource/UrlResourceLoader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/app.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/appContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/external/backbone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/documents.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/external/jquery-1.8.3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr_ui.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/external/underscore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/AppConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/AppConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/Configuration.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/Configuration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationException.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationInitializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationRepository.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationUpdateListener.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationUpdateListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/DefaultConfigurationRepository.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/DefaultConfigurationRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DefaultDocumentSearchService.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DefaultDocumentSearchService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/domain/Document.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/domain/Document.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DocumentSearchService.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DocumentSearchService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/DocumentSearcher.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/DocumentSearcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/DownloadDocumentController.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/DownloadDocumentController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/domain/Facet.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/domain/Facet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/FacetManager.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/FacetManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/view/FacetView.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/view/FacetView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/GetFacetsController.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/GetFacetsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/model/HtmlContentModel.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/model/HtmlContentModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/configure/IndexPageConfigurator.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/configure/IndexPageConfigurator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ddls/Init_Categories.sql" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ddls/Init_Categories.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ddls/Init_Configurations.sql" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ddls/Init_Configurations.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/SearchDocumentController.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/SearchDocumentController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/solr/SolrDocumentSearcher.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/solr/SolrDocumentSearcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/resource/UrlResourceLoader.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/resource/UrlResourceLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/appContext.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/appContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/facets.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/facets.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jdbc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/jul.properties" afterPath="$PROJECT_DIR$/src/main/resources/jul.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mybatis_config.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mybatis_config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr_ui.iml" afterPath="$PROJECT_DIR$/solr_ui.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="solr_ui.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388418216082" ignored="false" />
-    <file path="/index.html" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388499952598" ignored="false" />
+    <file path="/Dummy.txt" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388661435940" ignored="false" />
+    <file path="/index.html" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388666942535" ignored="false" />
     <file path="/SearchDocumentController.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388576618247" ignored="false" />
-    <file path="/DocumentSearchService.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388576459477" ignored="false" />
-    <file path="/Document.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388405050952" ignored="false" />
-    <file path="/DocumentSearcher.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388488030680" ignored="false" />
-    <file path="/DefaultDocumentSearchService.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388576514433" ignored="false" />
-    <file path="/SolrDocumentSearcher.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388577398393" ignored="false" />
+    <file path="/DocumentSearchService.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388656222502" ignored="false" />
+    <file path="/Document.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388655537817" ignored="false" />
+    <file path="/DocumentSearcher.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388656563569" ignored="false" />
+    <file path="/DefaultDocumentSearchService.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388671459594" ignored="false" />
+    <file path="/SolrDocumentSearcher.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388668440208" ignored="false" />
     <file path="/DocumentSearcherFactory.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388394625266" ignored="false" />
     <file path="/SolrDocumentSearcherFactory.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388395388510" ignored="false" />
-    <file path="/fragment.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388491002806" ignored="false" />
+    <file path="/fragment.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388655445353" ignored="false" />
     <file path="/SearchException.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388488450614" ignored="false" />
     <file path="/SolrDocumentSearcherTest.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388403340605" ignored="false" />
     <file path="/documents.jsp" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388497438945" ignored="false" />
-    <file path="/ConfigurationApp.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388491620735" ignored="false" />
-    <file path="/appContext.xml" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388407645703" ignored="false" />
-    <file path="/app.properties" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388406399706" ignored="false" />
+    <file path="/ConfigurationApp.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388629791923" ignored="false" />
+    <file path="/appContext.xml" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388670802034" ignored="false" />
+    <file path="/app.properties" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388632497068" ignored="false" />
     <file path="/web.xml" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388410714935" ignored="false" />
     <file path="/pom.xml" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388406699026" ignored="false" />
-    <file path="/StreamContentModel.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388484571936" ignored="false" />
+    <file path="/StreamContentModel.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388668727454" ignored="false" />
     <file path="/StreamContent.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388495193274" ignored="false" />
     <file path="/SearchBox.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388577935246" ignored="false" />
     <file path="/IndexComponentConfigurator.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388479017640" ignored="false" />
     <file path="/ComponentRepository.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388478790135" ignored="false" />
     <file path="/Index.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388479484147" ignored="false" />
-    <file path="/DownloadDocumentController.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388493971277" ignored="false" />
+    <file path="/DownloadDocumentController.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388668295060" ignored="false" />
     <file path="/ResourceLoader.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388491663128" ignored="false" />
     <file path="/UrlResourceLoader.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388491830261" ignored="false" />
     <file path="/FileResource.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388490788104" ignored="false" />
@@ -76,8 +73,33 @@
     <file path="$PROJECT_DIR$/../test2/src/main/java/Test.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388492807078" ignored="false" />
     <file path="/Test.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388492752744" ignored="false" />
     <file path="/Resource.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388493710850" ignored="false" />
-    <file path="/IndexPageConfigurator.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388495224688" ignored="false" />
+    <file path="/IndexPageConfigurator.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388667586230" ignored="false" />
     <file path="/SearchResult.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388576761847" ignored="false" />
+    <file path="/Create__Categories.sql" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388630031331" ignored="false" />
+    <file path="/CREATE_TABLE_Configurations.sql" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388630788329" ignored="false" />
+    <file path="/CREATE_TABLE_Categories.sql" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388630426177" ignored="false" />
+    <file path="/Init_Categories.sql" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388647612278" ignored="false" />
+    <file path="/Configuration.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388640625584" ignored="false" />
+    <file path="/ConfigurationDataMapper.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388645381717" ignored="false" />
+    <file path="/AppConfiguration.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388671057981" ignored="false" />
+    <file path="$PROJECT_DIR$/../H2Test/pom.xml" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388633845934" ignored="false" />
+    <file path="$PROJECT_DIR$/../H2Test/src/main/java/FunctionTest.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388637075627" ignored="false" />
+    <file path="/FunctionTest.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388636262479" ignored="false" />
+    <file path="/ConfigurationInitializer.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388647019183" ignored="false" />
+    <file path="/ConfigurationInitializationDataMapper.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388637209829" ignored="false" />
+    <file path="/ConfigurationRepository.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388656898553" ignored="false" />
+    <file path="/ConfigurationUpdateListener.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388654025668" ignored="false" />
+    <file path="/DefaultConfigurationRepository.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388658995171" ignored="false" />
+    <file path="/ConfigurationException.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388641356715" ignored="false" />
+    <file path="/Init_Configurations.sql" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388671272103" ignored="false" />
+    <file path="/jul.properties" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388651780593" ignored="false" />
+    <file path="/Facet.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388656038188" ignored="false" />
+    <file path="/FacetManager.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388658971208" ignored="false" />
+    <file path="/facets.jsp" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388666902874" ignored="false" />
+    <file path="/GetFacetsController.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388658523365" ignored="false" />
+    <file path="/FacetView.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388669355866" ignored="false" />
+    <file path="/HtmlContentModel.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388659812508" ignored="false" />
+    <file path="/jdbc.properties" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388670847590" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +114,23 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/SearchDocumentController.java" line="15" class="my.apps.docsearchui.controllers.SearchDocumentController" package="my.apps.docsearchui.controllers">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -128,53 +167,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/solr/SolrDocumentSearcher.java" line="104" class="my.apps.docsearchui.search.solr.SolrDocumentSearcher" package="my.apps.docsearchui.search.solr">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/SearchDocumentController.java" line="17" class="my.apps.docsearchui.controllers.SearchDocumentController" package="my.apps.docsearchui.controllers">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/solr/SolrDocumentSearcher.java" line="49" class="my.apps.docsearchui.search.solr.SolrDocumentSearcher" package="my.apps.docsearchui.search.solr">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -184,7 +176,98 @@
     <favorites_list name="solr_ui" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="GetFacetsController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/GetFacetsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="13" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DownloadDocumentController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/DownloadDocumentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DocumentSearchService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DocumentSearchService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="17" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FacetView.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/view/FacetView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.8759124">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="88" column="9" selection-start="1865" selection-end="1865" vertical-scroll-proportion="-5.677419">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultDocumentSearchService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DefaultDocumentSearchService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="76" column="9" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigurationInitializer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationInitializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="13" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchBox.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/view/SearchBox.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="39" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StreamContent.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/view/StreamContent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppConfiguration.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/AppConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="25" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -202,27 +285,41 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/resource/UrlResourceLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/resource/Resource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/resource/UrlResource.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/view/StreamContent.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/configure/IndexPageConfigurator.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/documents.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/FacetManager.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/model/FacetModel.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/model/HtmlContentModel.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/facets.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/DocumentSearcher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DefaultDocumentSearchService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/SearchResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/solr/SolrDocumentSearcher.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/view/SearchBox.js" />
-        <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/SearchDocumentController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/configure/IndexPageConfigurator.js" />
         <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/DownloadDocumentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/resource/ResourceLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DocumentSearchService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/SearchDocumentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/solr/SolrDocumentSearcher.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/view/FacetView.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/AppConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/appContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/ddls/Init_Configurations.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DefaultDocumentSearchService.java" />
       </list>
     </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="solr_ui Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
@@ -250,10 +347,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
+    <option name="x" value="218" />
+    <option name="y" value="593" />
     <option name="width" value="1374" />
-    <option name="height" value="776" />
+    <option name="height" value="498" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -300,7 +397,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -333,28 +429,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="solr_ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="solr_ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -415,7 +489,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
+              <option name="myItemId" value="ddls" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -497,7 +571,71 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="external" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configure" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -579,6 +717,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docsearchui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="search" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -606,6 +778,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="docsearchui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -643,6 +819,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resource" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -673,7 +853,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mappers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -740,6 +924,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -766,19 +951,27 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\js\model" />
+      <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\js\view" />
+      <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\WEB-INF\jsp" />
       <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\js" />
       <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="my.apps.docsearchui.config" />
       <recent name="my.apps.docsearchui.resource" />
       <recent name="my.apps.docsearchui.search" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="my.apps.docsearchui.data.search" />
       <recent name="my.apps.docsearchui.search" />
+      <recent name="my.apps.docsearchui.data" />
+      <recent name="my.apps.docsearchui" />
       <recent name="my.apps.docsearchui.search.solr" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\image" />
+      <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\WEB-INF\jsp" />
     </key>
   </component>
@@ -847,19 +1040,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -885,6 +1065,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -974,7 +1167,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="776" extended-state="6" />
+    <frame x="218" y="593" width="1374" height="498" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -986,16 +1179,16 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3323077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.67230767" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15506808" sideWeight="0.64" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16111952" sideWeight="0.2846154" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.64" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.2846154" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7153846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3323077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1065,119 +1258,115 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationApp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
+        <state line="14" column="17" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/ddls/Init_Categories.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="14" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mybatis_config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/appContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="60" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/ddls/Init_Configurations.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="36" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="9" selection-start="1865" selection-end="1865" vertical-scroll-proportion="-5.677419">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/AppConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="25" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/GetFacetsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/DownloadDocumentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="8" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/domain/Document.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/resource/Resource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/resource/ResourceException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/resource/ResourceLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/resource/UrlResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="81" selection-end="81" vertical-scroll-proportion="0.22506393">
+        <state line="16" column="13" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DocumentSearchService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
+        <state line="9" column="17" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DefaultDocumentSearchService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+        <state line="76" column="9" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/SearchResult.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/SearchException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
+        <state line="19" column="13" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/DocumentSearcherFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/view/SearchBox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+        <state line="3" column="39" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/DocumentSearcher.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/view/StreamContent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/solr/SolrDocumentSearcher.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/view/FacetView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="14" selection-start="1789" selection-end="1789" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.8759124">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/search/solr/HttpSolrDocumentSearcherFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="272" selection-end="272" vertical-scroll-proportion="0.22506393">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/resource/UrlResourceLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="226" selection-end="226" vertical-scroll-proportion="0.50639385">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

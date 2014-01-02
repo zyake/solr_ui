@@ -8,6 +8,7 @@ CREATE TABLE CONFIGURATIONS
     PRIMARY KEY(CATEGORY, CONFIG_KEY)
 );
 
-INSERT INTO CONFIGURATIONS(CATEGORY, CONFIG_KEY, CONFIG_VALUE, COMMENT) VALUES ('global', 'solr_url', 'http://localhost:8888/solr/collection1/', '');
-INSERT INTO CONFIGURATIONS(CATEGORY, CONFIG_KEY, CONFIG_VALUE, COMMENT) VALUES  ('facet', 'facet_field1', 'content_type', '');
-INSERT INTO CONFIGURATIONS(CATEGORY, CONFIG_KEY, CONFIG_VALUE, COMMENT) VALUES  ('facet', 'facet_field2', 'author', '');
+INSERT INTO CONFIGURATIONS(CATEGORY, CONFIG_KEY, CONFIG_VALUE, COMMENT) VALUES
+ ('global', 'solr_url', 'http://localhost:8888/solr/collection1/', ''),
+ ('facet', 'facet_field1', 'content_type', ''),
+ ('facet', 'facet_field2', 'author_s', '');

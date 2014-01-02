@@ -1,16 +1,8 @@
 var StreamContentModel = Backbone.Model.extend({
 
-    defaults: function() {
-        return {
-            start: 0,
-            rows: 5,
-            isRetrieving: false,
-            query: null,
-        };
-    },
-
     initialize: function(arg) {
         this.retrieveUrl = arg.retrieveUrl;
+        this.fqueries = [];
     },
 
     reset: function(query) {
@@ -37,10 +29,24 @@ var StreamContentModel = Backbone.Model.extend({
 
         var me = this;
         var xhr = this.createXhr(initialized);
-        xhr.open("GET", this.retrieveUrl + "?query=" + this.query + "&start=" + this.start + "&rows=" + this.rows);
+        xhr.open("GET", this.createQuery());
         xhr.send(null);
 
         return true;
+    },
+
+    createQuery: function() {
+        var fq = "";
+        for ( key in this.fqueries ) {
+            fq += "&fq=" + key + ":\"" + this.fqueries[key] + "\"" + "&";
+        }
+       var query = this.retrieveUrl + "?query=" + this.query + "&start=" + this.start +fq +  "&rows=" + this.rows;
+
+       return query;
+    },
+
+    getFQueries: function() {
+        return this.fqueries;
     },
 
     createXhr: function(initialized) {
@@ -54,7 +60,7 @@ var StreamContentModel = Backbone.Model.extend({
 
         xhr.addEventListener("error", function() {
             me.isRetrieving = false;
-            me.trigger("error", xhr);
+            me.trigger("retrieve.failure", xhr);
         });
 
         return xhr;

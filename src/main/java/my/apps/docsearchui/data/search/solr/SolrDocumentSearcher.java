@@ -4,9 +4,10 @@ import my.apps.docsearchui.config.Configuration;
 import my.apps.docsearchui.config.ConfigurationRepository;
 import my.apps.docsearchui.config.ConfigurationUpdateListener;
 import my.apps.docsearchui.domain.Document;
-import my.apps.docsearchui.domain.DocumentSearcher;
-import my.apps.docsearchui.domain.SearchException;
-import my.apps.docsearchui.domain.SearchResult;
+import my.apps.docsearchui.data.search.DocumentSearcher;
+import my.apps.docsearchui.data.search.SearchException;
+import my.apps.docsearchui.data.search.SearchResult;
+import my.apps.docsearchui.domain.Facet;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.client.solrj.SolrServerException;
@@ -20,6 +21,9 @@ import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Solrでドキュメントを検索する実装。
+ */
 public class SolrDocumentSearcher implements DocumentSearcher, ConfigurationUpdateListener {
 
     private static final Logger LOGGER = Logger.getLogger(SolrDocumentSearcher.class.getName());
@@ -53,12 +57,15 @@ public class SolrDocumentSearcher implements DocumentSearcher, ConfigurationUpda
     }
 
     @Override
-    public SearchResult searchDocuments(String searchPhrase, int start, int rows) {
+    public SearchResult searchDocuments(String searchPhrase, int start, int rows, String[] fqueries) {
         SolrQuery solrQuery = new SolrQuery(searchPhrase)
         .setHighlight(true)
         .addHighlightField("content")
         .setStart(start)
         .setRows(rows);
+        if ( fqueries != null ) {
+            solrQuery.addFilterQuery(fqueries);
+        }
 
         QueryResponse response = query(solrQuery);
         List<Document> resultDocs = new ArrayList<>();
@@ -92,18 +99,18 @@ public class SolrDocumentSearcher implements DocumentSearcher, ConfigurationUpda
     }
 
     @Override
-    public Map<String, Integer> getFacets(String facetField) {
+    public Facet getFacet(String facetField) {
         SolrQuery solrQuery = new SolrQuery("*:*")
                 .addFacetField(facetField)
                 .addFilterQuery("id");
 
         QueryResponse response = query(solrQuery);
         Map<String, Integer> facets = new HashMap<>();
-        for ( FacetField field : response.getFacetFields() ) {
-            facets.put(field.getName(), field.getValueCount());
+        for ( FacetField.Count count: response.getFacetField(facetField).getValues() ) {
+            facets.put(count.getName(), (int) count.getCount());
         }
 
-        return facets;
+        return new Facet(facetField, facets);
     }
 
     protected Document parseDocument(SolrDocument doc, QueryResponse res) {

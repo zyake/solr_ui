@@ -5,9 +5,12 @@
   <script src="js/external/underscore.js"></script>
   <script src="js/external/backbone.js"></script>
   <script src="js/model/StreamContentModel.js"></script>
+  <script src="js/model/HtmlContentModel.js"></script>
   <script src="js/util/ComponentRepository.js"></script>
   <script src="js/view/SearchBox.js"></script>
   <script src="js/view/StreamContent.js"></script>
+  <script src="js/view/StreamContent.js"></script>
+  <script src="js/view/FacetView.js"></script>
   <script src="js/configure/IndexPageConfigurator.js"></script>
   <script>
       $(function() {
@@ -21,7 +24,42 @@
        color: white;
       }
 
+      h2 {
+       font-size: medium;
+      }
+
+      a {
+       color: skyblue;
+      }
+
+      .document {
+       border: 1px solid #585858;
+       background-color: #585858;
+       margin-bottom: 1em;
+       padding: 0.5em;
+       border-radius: 5px;
+       color: white;
+      }
+
+      .document em {
+       font-weight: bold;
+       color: red;
+      }
+
+      .title {
+       font-weight: bold;
+      }
+
+      .result-body {
+       background-color: gray;
+      }
+
+      .actionButton {
+       cursor: pointer;
+      }
+
       #left {
+       padding: 0.5em;
        position: relative;
        width: 20%;
        height: 80%;
@@ -41,65 +79,30 @@
        padding: 5px;
       }
 
-      .document {
-       border: 1px solid #585858;
-       background-color: #585858;
-       margin-bottom: 1em;
-       padding: 0.5em;
-       border-radius: 5px;
-       color: white;
-      }
-
-     .document em {
-       font-weight: bold;
-       color: red;
-     }
-
-      .title {
-       font-weight: bold;
-      }
-
      #bottom {
        margin-top: 1em;
-     }
-
-     .result-body {
-       background-color: gray;
      }
   </style>
  </head>
  <body>
   <div id="top">
-      <h1>Solr UI</h1>
+      <h1><img src="image/solr_ui.png"/></h1>
       <div id="searchBox"><input class="input" style="width: 30em;" type="text"/><input class="submit" value="検索" type="button"/><span class="resultSummary"></span><span><img class="loading" style="display: none;" src="image/loading.gif"></span></div>
 
   </div>
   <div id="bottom">
    <div id="left">
-    <h2>Field Facets</h2>
-    <div id="field_facets">
-        <dl>
-            <dt>content_type</dt>
-            <dd>application/pdf</dd>
-            <dd>application/excel</dd>
-            <dd>application/word</dd>
-        </dl>
+    <h2>フィールド・ファセット</h2>
+    <div class="field_facets">
     </div>
-    <h2>Categories</h2>
-    <div id="categories">
-        <dl>
-            <dt>
-                <dd>内部設計書</dd>
-                <dd>外部設計書</dd>
-                <dd>レビュー済み</dd>
-            </dt>
-        </dl>
-    </div>
+    <span>
+     <img class="loading" style="display: none;" src="image/loading.gif"/>
+    </span>
    </div>
    <div id="right">
     <div class="content">
     </div>
-　 <a class="retrieveLink" href="" onclick="return false">続きを見る</a><span><img class="loading" style="display: none;" src="image/loading.gif"></span>
+　 <a class="retrieveLink" href="" onclick="return false">続きを見る</a><span><img class="loading" style="display: none;" src="image/loading.gif"/></span>
    </div>
   </div>
  </body>

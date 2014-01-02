@@ -6,7 +6,8 @@ function IndexPageConfigurator() {
 
 IndexPageConfigurator.prototype.configure = function() {
     var URL = {
-         SEARCH: "/solr_ui/apps/search"
+         SEARCH: "/solr_ui/apps/search",
+         FACETS: "/solr_ui/apps/facets"
     };
 
     var compRepository = ComponentRepository.create();
@@ -42,6 +43,25 @@ IndexPageConfigurator.prototype.configure = function() {
             content: docContent,
             loadingImg: loadingImg,
             retrieveLink: retrieveLink
+        });
+    });
+
+    compRepository.addFactory("facetHtmlContentModel", function() {
+        return new HtmlContentModel({
+            retrieveUrl: URL.FACETS
+        });
+    });
+
+    compRepository.addFactory("facetView", function() {
+        var me = this;
+        var left = document.getElementById("left");
+        var facet = left.querySelector(".field_facets");
+        var loadingImg = left.querySelector(".loading");
+        return new FacetView({
+            facet: facet,
+            loadingImg: loadingImg,
+            model: me.get("facetHtmlContentModel"),
+            streamModel: me.get("contentModel")
         });
     });
 
