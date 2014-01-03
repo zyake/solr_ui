@@ -25,8 +25,12 @@ var HtmlContentModel = Backbone.Model.extend({
         var xhr = new XMLHttpRequest();
         xhr.addEventListener("load", function() {
             me.isRetrieving = false;
-            me.start += me.rows;
-            me.trigger("retrieve.success", xhr);
+            if ( xhr.status == 200 ) {
+              me.start += me.rows;
+              me.trigger("retrieve.success", xhr);
+            } else {
+                me.trigger("retrieve.failure", xhr);
+            }
         });
 
         xhr.addEventListener("error", function() {

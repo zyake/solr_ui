@@ -30,6 +30,7 @@ var StreamContentModel = Backbone.Model.extend({
         var me = this;
         var xhr = this.createXhr(initialized);
         xhr.open("GET", this.createQuery());
+        this.trigger("retrieve.start", xhr);
         xhr.send(null);
 
         return true;
@@ -54,8 +55,13 @@ var StreamContentModel = Backbone.Model.extend({
         var xhr = new XMLHttpRequest();
         xhr.addEventListener("load", function() {
             me.isRetrieving = false;
-            me.start += me.rows;
-            me.trigger("retrieve.success", xhr, initialized);
+
+            if ( xhr.status == 200 ) {
+                me.start += me.rows;
+                me.trigger("retrieve.success", xhr, initialized);
+            } else {
+                 me.trigger("retrieve.failure", xhr);
+            }
         });
 
         xhr.addEventListener("error", function() {

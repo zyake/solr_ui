@@ -13,7 +13,14 @@
 
         var me = this;
         this.submitButton.addEventListener("click", function() { me.submit() });
-        this.listenTo(this.model, "retrieve.success", function(xhr) { me.enableSubmitting(xhr) });
+        this.listenTo(this.model, "retrieve.success", function(xhr) {
+            me.enableSubmitting();
+            me.renderSuccessResult(xhr);
+        });
+        this.listenTo(this.model, "retrieve.failure", function(xhr) {
+            me.enableSubmitting();
+            me.renderFailureResult(xhr);
+        });
  	},
 
  	submit: function() {
@@ -24,17 +31,25 @@
         this.model.retrieveContent(this.inputBox.value);
  	},
 
- 	enableSubmitting: function(xhr) {
- 	    this.submitting = false;
- 	    this.submitButton.style.disable = false;
- 	    this.inputBox.style.disable= false;
-
-        this.loadingImg.style.display = "none";
+    renderSuccessResult: function(xhr) {
  	    var contentCount = xhr.getResponseHeader("Content-Count");
  	    var contentFound = xhr.getResponseHeader("Content-Found");
  	    var timeMillsec = xhr.getResponseHeader("Search-Time");
  	    this.resultSummary.innerHTML = "検索が完了しました.(マッチしたもの=" + contentFound +
  	    ", 取得したもの=" + contentCount + ", 検索時間=" + timeMillsec + "ms)";
+    },
+
+    renderFailureResult: function(xhr) {
+        this.resultSummary.innerHTML =
+            "検索に失敗しました。サーバサイドで何らかのトラブルが発生した可能性があります。" +
+            "(" + xhr.statusText + ")";
+    },
+
+ 	enableSubmitting: function() {
+ 	    this.submitting = false;
+ 	    this.submitButton.style.disable = false;
+ 	    this.inputBox.style.disable= false;
+        this.loadingImg.style.display = "none";
  	},
 
  	disableSubmitting: function() {

@@ -2,44 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="857511f7-20d7-40ff-a77b-662d7e7a0104" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/AppConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/AppConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/Configuration.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/Configuration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationException.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationRepository.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationUpdateListener.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationUpdateListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/DefaultConfigurationRepository.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/DefaultConfigurationRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DefaultDocumentSearchService.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DefaultDocumentSearchService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/domain/Document.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/domain/Document.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DocumentSearchService.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DocumentSearchService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/DocumentSearcher.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/DocumentSearcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/DownloadDocumentController.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/DownloadDocumentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/domain/Facet.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/domain/Facet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/FacetManager.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/FacetManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/image/solr_ui.png" afterPath="$PROJECT_DIR$/src/main/webapp/image/solr_ui.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/view/FacetView.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/view/FacetView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/GetFacetsController.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/GetFacetsController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/model/HtmlContentModel.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/model/HtmlContentModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/configure/IndexPageConfigurator.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/configure/IndexPageConfigurator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ddls/Init_Categories.sql" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ddls/Init_Categories.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ddls/Init_Configurations.sql" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ddls/Init_Configurations.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/SearchDocumentController.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/SearchDocumentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/solr/SolrDocumentSearcher.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/solr/SolrDocumentSearcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/view/SearchBox.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/view/SearchBox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/view/StreamContent.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/view/StreamContent.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/resource/UrlResourceLoader.java" afterPath="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/resource/UrlResourceLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/appContext.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/appContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/facets.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/facets.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/jul.properties" afterPath="$PROJECT_DIR$/src/main/resources/jul.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mybatis_config.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mybatis_config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr_ui.iml" afterPath="$PROJECT_DIR$/solr_ui.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="solr_ui.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388661435940" ignored="false" />
-    <file path="/index.html" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388666942535" ignored="false" />
+    <file path="/Dummy.txt" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388673241954" ignored="false" />
+    <file path="/index.html" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388762272500" ignored="false" />
     <file path="/SearchDocumentController.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388576618247" ignored="false" />
     <file path="/DocumentSearchService.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388656222502" ignored="false" />
     <file path="/Document.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388655537817" ignored="false" />
@@ -57,9 +32,9 @@
     <file path="/app.properties" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388632497068" ignored="false" />
     <file path="/web.xml" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388410714935" ignored="false" />
     <file path="/pom.xml" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388406699026" ignored="false" />
-    <file path="/StreamContentModel.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388668727454" ignored="false" />
-    <file path="/StreamContent.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388495193274" ignored="false" />
-    <file path="/SearchBox.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388577935246" ignored="false" />
+    <file path="/StreamContentModel.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388758609283" ignored="false" />
+    <file path="/StreamContent.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388758704844" ignored="false" />
+    <file path="/SearchBox.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388758244463" ignored="false" />
     <file path="/IndexComponentConfigurator.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388479017640" ignored="false" />
     <file path="/ComponentRepository.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388478790135" ignored="false" />
     <file path="/Index.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388479484147" ignored="false" />
@@ -97,8 +72,8 @@
     <file path="/FacetManager.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388658971208" ignored="false" />
     <file path="/facets.jsp" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388666902874" ignored="false" />
     <file path="/GetFacetsController.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388658523365" ignored="false" />
-    <file path="/FacetView.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388669355866" ignored="false" />
-    <file path="/HtmlContentModel.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388659812508" ignored="false" />
+    <file path="/FacetView.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388758947095" ignored="false" />
+    <file path="/HtmlContentModel.js" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388757910578" ignored="false" />
     <file path="/jdbc.properties" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388670847590" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -177,64 +152,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GetFacetsController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/GetFacetsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DownloadDocumentController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/DownloadDocumentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DocumentSearchService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DocumentSearchService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="17" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FacetView.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/view/FacetView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.8759124">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="9" selection-start="1865" selection-end="1865" vertical-scroll-proportion="-5.677419">
+            <state line="64" column="19" selection-start="1501" selection-end="1501" vertical-scroll-proportion="3.6666667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultDocumentSearchService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DefaultDocumentSearchService.java">
+      <file leaf-file-name="ConfigurationUpdateListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationUpdateListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="9" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.0">
+            <state line="5" column="17" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigurationInitializer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationInitializer.java">
+      <file leaf-file-name="ConfigurationRepository.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="13" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
+            <state line="20" column="34" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FacetView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/view/FacetView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="32" selection-start="2038" selection-end="2038" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SolrDocumentSearcher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/solr/SolrDocumentSearcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="21" selection-start="1713" selection-end="1713" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -243,7 +200,16 @@
       <file leaf-file-name="SearchBox.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/view/SearchBox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="39" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
+            <state line="19" column="66" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HtmlContentModel.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/model/HtmlContentModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="20" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -252,16 +218,16 @@
       <file leaf-file-name="StreamContent.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/view/StreamContent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="27" column="5" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppConfiguration.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/AppConfiguration.java">
+      <file leaf-file-name="StreamContentModel.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="25" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
+            <state line="32" column="20" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -285,22 +251,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/FacetManager.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/model/FacetModel.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/model/HtmlContentModel.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/facets.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/configure/IndexPageConfigurator.js" />
         <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/DownloadDocumentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/SearchDocumentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/solr/SolrDocumentSearcher.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/view/FacetView.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/AppConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/appContext.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/ddls/Init_Configurations.sql" />
         <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DefaultDocumentSearchService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/model/HtmlContentModel.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/view/SearchBox.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/view/StreamContent.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/view/FacetView.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
       </list>
     </option>
   </component>
@@ -347,8 +313,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="218" />
-    <option name="y" value="593" />
+    <option name="x" value="10" />
+    <option name="y" value="192" />
     <option name="width" value="1374" />
     <option name="height" value="498" />
   </component>
@@ -397,6 +363,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -460,6 +427,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -636,6 +633,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="configure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -924,7 +947,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -944,11 +966,11 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="my.apps.docsearchui.search.solr" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="my.apps.docsearchui.search.solr" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\js\model" />
@@ -962,17 +984,17 @@
       <recent name="my.apps.docsearchui.resource" />
       <recent name="my.apps.docsearchui.search" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\image" />
+      <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\WEB-INF\jsp" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="my.apps.docsearchui.data.search" />
       <recent name="my.apps.docsearchui.search" />
       <recent name="my.apps.docsearchui.data" />
       <recent name="my.apps.docsearchui" />
       <recent name="my.apps.docsearchui.search.solr" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\image" />
-      <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\WEB-INF\jsp" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.SolrDocumentSearcherTest.testSearchDocuments">
@@ -1040,6 +1062,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1065,19 +1100,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1167,11 +1189,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="218" y="593" width="1374" height="498" extended-state="0" />
+    <frame x="10" y="192" width="1374" height="498" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.6707504" order="1" side_tool="false" content_ui="tabs" />
@@ -1179,16 +1201,16 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3323077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.67230767" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16111952" sideWeight="0.2846154" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1633888" sideWeight="0.28494623" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.2846154" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7153846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.28494623" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.71505374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3323077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1258,28 +1280,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="17" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/ddls/Init_Categories.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="14" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mybatis_config.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/ddls/Init_Configurations.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -1288,84 +1289,98 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/appContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="60" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+        <state line="12" column="8" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/ddls/Init_Configurations.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mybatis_config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="36" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+        <state line="6" column="16" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="9" selection-start="1865" selection-end="1865" vertical-scroll-proportion="-5.677419">
+        <state line="12" column="21" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/AppConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/DefaultConfigurationRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="25" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
+        <state line="134" column="93" selection-start="4685" selection-end="4685" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/GetFacetsController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/FacetManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
+        <state line="23" column="28" selection-start="830" selection-end="842" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/DownloadDocumentController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/solr/SolrDocumentSearcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
+        <state line="45" column="21" selection-start="1713" selection-end="1713" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DocumentSearchService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationUpdateListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+        <state line="5" column="17" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DefaultDocumentSearchService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="9" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.0">
+        <state line="20" column="34" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/model/HtmlContentModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
+        <state line="28" column="20" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/view/SearchBox.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="39" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
+        <state line="32" column="20" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/view/StreamContent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="27" column="5" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/view/SearchBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="66" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/view/FacetView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.8759124">
+        <state line="52" column="32" selection-start="2038" selection-end="2038" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="19" selection-start="1501" selection-end="1501" vertical-scroll-proportion="3.6666667">
           <folding />
         </state>
       </provider>
