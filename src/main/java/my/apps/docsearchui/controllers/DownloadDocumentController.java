@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.net.URLEncoder;
 
 @Controller
 @RequestMapping("/download")
@@ -24,8 +25,10 @@ public class DownloadDocumentController {
                                  HttpServletResponse response) throws IOException {
         Resource resource = searchService.loadDocument(id, query);
 
-        response.setContentType(resource.getContentType());
-        response.setHeader("Content-Disposition", "attachment; filename=\"" + resource.getFilename() + "\"");
+        response.setContentType(resource.getContentType() + ";charset=utf-8");
+
+        String contentDisposition = "attachment; filename*=utf-8'ja'"+URLEncoder.encode(resource.getFilename(), "UTF8");
+        response.setHeader("Content-Disposition", contentDisposition);
         IOUtils.copy(resource.getInputStream(), response.getOutputStream());
     }
 }
