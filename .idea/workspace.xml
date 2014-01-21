@@ -8,7 +8,7 @@
     <ignored path="solr_ui.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1390227450934" ignored="false" />
-    <file path="/index.html" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1390227605383" ignored="false" />
+    <file path="/index.html" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1390307703326" ignored="false" />
     <file path="/SearchDocumentController.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388576618247" ignored="false" />
     <file path="/DocumentSearchService.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388656222502" ignored="false" />
     <file path="/Document.java" changelist="857511f7-20d7-40ff-a77b-662d7e7a0104" time="1388655537817" ignored="false" />
@@ -158,7 +158,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="26" selection-start="3177" selection-end="3177" vertical-scroll-proportion="0.43037975">
+            <state line="99" column="7" selection-start="2614" selection-end="2614" vertical-scroll-proportion="0.06215722">
               <folding />
             </state>
           </provider>
@@ -903,7 +903,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="776" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -919,7 +919,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11043873" sideWeight="0.28330782" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20953101" sideWeight="0.28330782" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.7166922" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7166922" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1092,7 +1092,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="26" selection-start="3177" selection-end="3177" vertical-scroll-proportion="0.43037975">
+        <state line="99" column="7" selection-start="2614" selection-end="2614" vertical-scroll-proportion="0.06215722">
           <folding />
         </state>
       </provider>
