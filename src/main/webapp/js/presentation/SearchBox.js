@@ -17,6 +17,11 @@ SearchBox = Object.create(Presentation, {
         this.loadingImg = this.query(".loading");
 
         this.on(this.submitButton, "click", this.submit);
+        this.on(this.inputBox, "keypress", function(event) {
+            if ( event.keyIdentifier === "Enter" ) {
+                this.submit();
+            }
+        })
         this.addEventRef(this.id, Id.onAbstraction(this).load());
         this.addEventRef(this.id, Id.onAbstraction(this).failure());
     }},

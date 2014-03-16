@@ -1,6 +1,6 @@
 FacetManager = Object.create(AbstractionProxy, {
 
-    fields: { value: { facets: { value: {} } } },
+    fields: { value: { facets: { value: [] } } },
 
     initialize: { value: function(control) {
         AbstractionProxy.initialize.call(this, control);
@@ -8,7 +8,7 @@ FacetManager = Object.create(AbstractionProxy, {
     }},
 
     notify: { value: function(event, arg) {
-        if ( Id.onPresentation(this).load() == event ) {
+        if ( Id.onPresentation(this).change() == event ) {
             this.setFacet(arg);
         } else {
             AbstractionProxy.notify.call(this, event, arg);
@@ -16,20 +16,17 @@ FacetManager = Object.create(AbstractionProxy, {
     }},
 
     setFacet: { value: function(arg) {
-        if ( this.facets[arg.field] == null ) {
-            this.facets[arg.field] = [];
+        if ( arg.enabled ) {
+            this.facets.push(arg.field + ":\"" + arg.facet + "\"");
+        } else {
+              var index = this.facets.indexOf(arg.field + ":\"" + arg.facet + "\"");
+              if ( index > -1 ) {
+                delete this.facets[index];
+              }
         }
-        var fields = this.facets[arg.field];
+    }},
 
-        var newFacetIsEnabled = fields.indexOf(arg.facet) == -1 && arg.enabled;
-        if ( newFacetIsEnabled ) {
-            fields.push(arg.facet);
-            return;
-        }
-
-        var facetIsDisabled = fields.indexOf(arg.facet) > -1 && ! arg.enabled;
-        if ( facetIsDisabled ) {
-            delete fields[fields.indexOf(arg.facet)];
-        }
+    getFacets: { value: function() {
+        return this.facets;
     }}
 });

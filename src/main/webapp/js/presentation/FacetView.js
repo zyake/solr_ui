@@ -46,7 +46,7 @@ FacetView = Object.create(Presentation, {
 
             var field = this.attributes["field"].nodeValue;
             var facet = this.attributes["facet"].nodeValue;
-            me.raiseEvent(Id.onPresentation(me).load(), { field: field, facet: facet, enabled: true });
+            me.raiseEvent(Id.onPresentation(me).change(), { field: field, facet: facet, enabled: true });
         };
 
         actionButton.disableAppended = function() {
@@ -55,15 +55,15 @@ FacetView = Object.create(Presentation, {
             this.addButton.style.display = "inline";
             var field = this.attributes["field"].nodeValue;
             var facet = this.attributes["facet"].nodeValue;
-            me.raiseEvent(Id.onPresentation(me).load(), { field: field, facet: facet, enabled: false });
+            me.raiseEvent(Id.onPresentation(me).change(), { field: field, facet: facet, enabled: false });
         };
 
-        this.on(actionButton, "click", function() {
+        actionButton.onclick = function() {
             if ( actionButton.isAppended ) {
                 actionButton.disableAppended();
             } else {
                 actionButton.enableAppended();
             }
-        });
+        };
  	}},
 });

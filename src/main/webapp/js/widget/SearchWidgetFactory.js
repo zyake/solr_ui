@@ -23,7 +23,7 @@ SearchWidgetFactory = function(id, elem, repository) {
                  };
                  return response;
              };
-
+             searchModel.facetManager = this.get("facetModel");
              return searchModel;
         },
         facetView: function(id, elem) {
@@ -31,10 +31,11 @@ SearchWidgetFactory = function(id, elem, repository) {
         facetModel: function(id) {
           var reqResMap = {};
           reqResMap[Id.start()] = Id.load();
+          reqResMap[Id.change()] = {};
           var model = FacetManager.create(id, reqResMap, FACET_URL);
-            model.resHandler = AbstractionProxy.AS_TEXT;
+          model.resHandler = AbstractionProxy.AS_TEXT;
 
-            return model;
+          return model;
         }
 
     })

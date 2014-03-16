@@ -1,17 +1,17 @@
 StreamContentModel = Object.create(AbstractionProxy, {
 
     fields: { value: {
-        filters: { value: [] },
         start: { value: 0, writable: true },
-        rows: { value: 5, writable: true }
+        rows: { value: 5, writable: true },
+        facetManager: { value: null, writable: true }
     }},
 
     initialize: { value: function(control) {
         AbstractionProxy.initialize.call(this, control);
         this.reqHandler = AbstractionProxy.FOR_JSON;
         this.method = "POST";
-
         this.reset();
+        this.control.addEventRef(this.id, Id.onPresentation(this).change());
     }},
 
     notify: { value: function(event, arg) {
@@ -22,7 +22,12 @@ StreamContentModel = Object.create(AbstractionProxy, {
              this.reset();
          }
             var me = this;
-            this.fetch(event, { phrase: arg.phrase, start: me.start, rows: me.rows, initialized: arg.initialized || false });
+            this.fetch(event, {
+                phrase: arg.phrase,
+                start: me.start,
+                rows: me.rows,
+                initialized: arg.initialized || false,
+                fqueries: this.facetManager.getFacets() });
             this.increment();
         }
     }},
