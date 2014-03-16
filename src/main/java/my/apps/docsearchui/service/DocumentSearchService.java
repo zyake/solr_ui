@@ -3,9 +3,9 @@ package my.apps.docsearchui.service;
 import my.apps.docsearchui.data.resource.Resource;
 import my.apps.docsearchui.data.search.SearchResult;
 import my.apps.docsearchui.domain.Facet;
+import my.apps.docsearchui.data.search.SearchRequest;
 
 import java.util.List;
-import java.util.Map;
 
 public interface DocumentSearchService {
 
@@ -13,7 +13,7 @@ public interface DocumentSearchService {
 
     void finish();
 
-    SearchResult searchDocuments(String searchPhrase, int start, int rows, String[] fqueries);
+    SearchResult searchDocuments(SearchRequest requestDTO);
 
     Resource loadDocument(String id, String query);
 

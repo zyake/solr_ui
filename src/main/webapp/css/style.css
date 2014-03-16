@@ -1,0 +1,91 @@
+body {
+    background-color: gray;
+    color: white;
+}
+
+h1 {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+h2 {
+    font-size: medium;
+}
+
+a {
+    color: skyblue;
+}
+
+.content-area {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: white;
+    padding: 0.5em 0.5em;
+    border: 1px solid #585858;
+    background-color: #585858;
+    border-radius: 5px;
+}
+
+.document {
+    margin-bottom: 1em;
+}
+
+.document em {
+    font-weight: bold;
+    color: red;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.result-body {
+    background-color: gray;
+}
+
+.actionButton {
+    cursor: pointer;
+}
+
+.input {
+    text-shadow: 0px 1px 0px #FFF;
+    outline: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(#BCBCBE), to(#FFF));
+    background: -moz-linear-gradient(top, #BCBCBE, #FFF);
+    border-radius: 3px;
+    border: 1px solid #717171;
+    box-shadow: 1px 1px 0px #EFEFEF;
+}
+
+.retrieveLink {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.left {
+    padding: 0.5em;
+    position: relative;
+    width: 20%;
+    height: 80%;
+    float: left;
+}
+
+.right {
+    position: relative;
+    left: 30px;
+    width: 70%;
+    height: 80%;
+    float: left;
+    padding: 5px;
+}
+
+.bottom {
+    margin-top: 1em;
+}
+
+#right-upper-menu {
+    text-align: right;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}

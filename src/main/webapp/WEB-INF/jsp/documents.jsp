@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:forEach items="${documents}" var="doc">
-     <div class="document">
+     <div class="document content-area">
          <span class="title">${doc.title}</span>
          <ul>
              <li><a href="<c:url value="/apps/download"><c:param name="id" value="${doc.id}"/><c:param name="query" value="${query}"/></c:url>">Id: ${doc.id}</a></li>

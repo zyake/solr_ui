@@ -7,11 +7,13 @@ import my.apps.docsearchui.data.resource.ResourceLoader;
 import my.apps.docsearchui.data.search.DocumentSearcher;
 import my.apps.docsearchui.data.search.SearchResult;
 import my.apps.docsearchui.domain.Facet;
+import my.apps.docsearchui.data.search.SearchRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -39,17 +41,16 @@ public class DefaultDocumentSearchService implements DocumentSearchService {
     }
 
     @Override
-    public SearchResult searchDocuments(String searchPhrase, int start, int rows, String[] fqueries) {
+    public SearchResult searchDocuments(SearchRequest request) {
         if ( LOGGER.isLoggable(Level.INFO) ) {
-            LOGGER.info("start service: solr phrase=" + searchPhrase +", start=" + start +
-                    ", rows=" + rows + ", fqueries=" + (fqueries == null ? "" : Arrays.asList(fqueries)));
+            LOGGER.info(request.toString());
         }
 
-        SearchResult searchResult = searcher.searchDocuments(searchPhrase, start, rows, fqueries);
+        SearchResult searchResult = searcher.searchDocuments(request);
 
         if ( LOGGER.isLoggable(Level.INFO) ) {
             LOGGER.info(
-                    "end service: solr result=" + searchPhrase + ", count=" + searchResult.getDocuments().size());
+                    "end service: solr result=" + request.getPhrase() + ", count=" + searchResult.getDocuments().size());
         }
 
         return searchResult;

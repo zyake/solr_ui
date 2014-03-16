@@ -3,6 +3,7 @@ package my.apps.docsearchui.data.search.solr;
 import my.apps.docsearchui.config.Configuration;
 import my.apps.docsearchui.config.ConfigurationRepository;
 import my.apps.docsearchui.config.ConfigurationUpdateListener;
+import my.apps.docsearchui.data.search.SearchRequest;
 import my.apps.docsearchui.domain.Document;
 import my.apps.docsearchui.data.search.DocumentSearcher;
 import my.apps.docsearchui.data.search.SearchException;
@@ -57,14 +58,14 @@ public class SolrDocumentSearcher implements DocumentSearcher, ConfigurationUpda
     }
 
     @Override
-    public SearchResult searchDocuments(String searchPhrase, int start, int rows, String[] fqueries) {
-        SolrQuery solrQuery = new SolrQuery(searchPhrase)
+    public SearchResult searchDocuments(SearchRequest request) {
+        SolrQuery solrQuery = new SolrQuery(request.getPhrase())
         .setHighlight(true)
         .addHighlightField("content")
-        .setStart(start)
-        .setRows(rows);
-        if ( fqueries != null ) {
-            solrQuery.addFilterQuery(fqueries);
+        .setStart(request.getStart())
+        .setRows(request.getRows());
+        if ( request.getFqueries() != null ) {
+            solrQuery.addFilterQuery(request.getFqueries());
         }
 
         QueryResponse response = query(solrQuery);
@@ -77,7 +78,7 @@ public class SolrDocumentSearcher implements DocumentSearcher, ConfigurationUpda
         int timeMillsec = response.getQTime();
         int numFound = (int) response.getResults().getNumFound();
 
-        SearchResult searchResult = new SearchResult(numFound, timeMillsec, start, rows, resultDocs);
+        SearchResult searchResult = new SearchResult(numFound, timeMillsec, request.getStart(), request.getRows(), resultDocs);
 
         return searchResult;
     }

@@ -11,7 +11,7 @@ public interface DocumentSearcher {
 
     void finish();
 
-    SearchResult searchDocuments(String searchPhrase, int start, int rows, String[] fqueries);
+    SearchResult searchDocuments(SearchRequest request);
 
     Document getDocument(String id);
 

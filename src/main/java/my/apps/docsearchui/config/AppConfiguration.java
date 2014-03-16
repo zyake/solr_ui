@@ -8,13 +8,16 @@ import my.apps.docsearchui.data.search.solr.SolrDocumentSearcher;
 import org.h2.jdbcx.JdbcDataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
+import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
+import org.springframework.context.annotation.*;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.DependsOn;
+import org.springframework.core.env.Environment;
 import org.springframework.core.io.Resource;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
@@ -27,17 +30,14 @@ import java.util.logging.LogManager;
  * Spring Java Configにより、アプリケーション全体の設定を定義します。
  */
 @Configuration
+@EnableWebMvc
+@ComponentScan( basePackages = "my.apps.docsearchui")
+@PropertySource("classpath:jdbc.properties")
 @MapperScan("my.apps.docsearchui.data.mappers")
 public class AppConfiguration {
 
-    @Value("${jdbc.url}")
-    private String jdbcUrl;
-
-    @Value("${jdbc.user}")
-    private String jdbcUser;
-
-    @Value("${jdbc.password}")
-    private String jdbcPassword;
+    @Autowired( required = true )
+    Environment env;
 
     @Value("/WEB-INF/ddls/Init_Categories.sql")
     private Resource initCategoriesResource;
@@ -69,9 +69,9 @@ public class AppConfiguration {
     @Bean
     public DataSource dataSource() {
         JdbcDataSource dataSource = new JdbcDataSource();
-        dataSource.setURL(jdbcUrl);
-        dataSource.setUser(jdbcUser);
-        dataSource.setPassword(jdbcPassword);
+        dataSource.setURL(env.getProperty("jdbc.url"));
+        dataSource.setUser(env.getProperty("jdbc.user"));
+        dataSource.setPassword(env.getProperty("jdbc.password"));
 
         return dataSource;
     }
