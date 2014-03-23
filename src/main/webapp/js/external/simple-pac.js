@@ -483,7 +483,7 @@ CompositePresentation = Object.create(Presentation, {
              return;
          }
          if ( this.idToElemMap[id] != null ) {
-             this.doTransit(id);
+             this.doTransit(id, {});
              return;
          }
 
@@ -752,7 +752,7 @@ Id = {
             throw new Error("separator couldn't find!: event=" + event);
         }
         var action = event.substring(separatorIndex);
-        
+
         return action;
     },
 

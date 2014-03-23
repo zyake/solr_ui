@@ -11,6 +11,6 @@ public interface ConfigurationDataMapper {
     @Select("SELECT CATEGORY, CONFIG_KEY, CONFIG_VALUE, COMMENT FROM CONFIGURATIONS")
     List<Configuration> getConfigurations();
 
-    @Update("UPDATE CONFIGURATIONS SET CONFIG_KEY=#{configValue} WHERE CATEGORY=#{category} AND CONFIG_KEY=#{configKey}")
+    @Update("UPDATE CONFIGURATIONS SET CONFIG_VALUE=#{configValue} WHERE CATEGORY=#{category} AND CONFIG_KEY=#{configKey}")
     int updateConfiguration(Configuration configuration);
 }

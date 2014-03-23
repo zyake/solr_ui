@@ -16,6 +16,27 @@ a {
     color: skyblue;
 }
 
+input {
+    text-shadow: 0px 1px 0px #FFF;
+    outline: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(#BCBCBE), to(#FFF));
+    background: -moz-linear-gradient(top, #BCBCBE, #FFF);
+    border-radius: 3px;
+    border: 1px solid #717171;
+    box-shadow: 1px 1px 0px #EFEFEF;
+}
+
+input[readonly] {
+    text-shadow: 0px 1px 0px #FFF;
+    outline: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a8a8ab), to(#FFF));
+    background: -moz-linear-gradient(top, #a8a8ab, #FFF);
+    border-radius: 3px;
+    border: 1px solid #717171;
+    box-shadow: 1px 1px 0px #EFEFEF;
+    color: gray;
+}
+
 .content-area {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
@@ -45,16 +66,6 @@ a {
 
 .actionButton {
     cursor: pointer;
-}
-
-.input {
-    text-shadow: 0px 1px 0px #FFF;
-    outline: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(#BCBCBE), to(#FFF));
-    background: -moz-linear-gradient(top, #BCBCBE, #FFF);
-    border-radius: 3px;
-    border: 1px solid #717171;
-    box-shadow: 1px 1px 0px #EFEFEF;
 }
 
 .retrieveLink {
@@ -88,4 +99,8 @@ a {
     position: absolute;
     top: 2%;
     right: 2%;
+}
+
+.form-table {
+    border: 1px solid black;
 }

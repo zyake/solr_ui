@@ -25,8 +25,8 @@
         <module name="solr_ui" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="solr_ui" target="1.7" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="solr_ui" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

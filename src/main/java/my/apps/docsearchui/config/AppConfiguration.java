@@ -10,12 +10,12 @@ import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 import org.springframework.context.annotation.*;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.core.io.Resource;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
@@ -31,9 +31,10 @@ import java.util.logging.LogManager;
  */
 @Configuration
 @EnableWebMvc
+@EnableTransactionManagement
 @ComponentScan( basePackages = "my.apps.docsearchui")
 @PropertySource("classpath:jdbc.properties")
-@MapperScan("my.apps.docsearchui.data.mappers")
+@MapperScan(basePackages = "my.apps.docsearchui.data.mappers")
 public class AppConfiguration {
 
     @Autowired( required = true )
@@ -45,16 +46,8 @@ public class AppConfiguration {
     @Value("/WEB-INF/ddls/Init_Configurations.sql")
     private Resource initConfigurationsResource;
 
-    @Value("classpath:jul.properties")
-    private Resource julPropertyResource;
-
     @Value("/WEB-INF/mybatis_config.xml")
     private Resource myBatisConfigResource;
-
-    @PostConstruct
-    public void init() throws IOException {
-        LogManager.getLogManager().readConfiguration(julPropertyResource.getInputStream());
-    }
 
     @Bean( initMethod = "init", destroyMethod = "finish" )
     public DocumentSearcher documentSearcher() {

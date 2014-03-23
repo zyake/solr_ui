@@ -1,8 +1,8 @@
 package my.apps.docsearchui.config;
 
-import org.apache.commons.collections.Predicate;
 
 import java.util.List;
+import java.util.function.Predicate;
 
 
 /**
@@ -14,18 +14,14 @@ import java.util.List;
  */
 public interface ConfigurationRepository {
 
+    Predicate<Configuration> ACCEPT_ALL = (config)-> true;
+
     Configuration getConfiguration(String category, String configKey);
 
-    List<Configuration> listConfigurations(Predicate predicate);
+    List<Configuration> listConfigurations(Predicate<Configuration> predicate);
 
     List<String> listCategories();
 
-    /**
-     * 設定値を更新します。
-     *
-     * @param configuration
-     * @return
-     */
     Configuration updateConfiguration(Configuration configuration);
 
     void addListener(ConfigurationUpdateListener listener);

@@ -8,20 +8,19 @@ import my.apps.docsearchui.data.search.DocumentSearcher;
 import my.apps.docsearchui.data.search.SearchResult;
 import my.apps.docsearchui.domain.Facet;
 import my.apps.docsearchui.data.search.SearchRequest;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 @Service
 public class DefaultDocumentSearchService implements DocumentSearchService {
 
-    private static final Logger LOGGER = Logger.getLogger(DefaultDocumentSearchService.class.getName());
+    private static final Log LOG = LogFactory.getLog(DefaultDocumentSearchService.class);
 
     @Autowired(required = true)
     private DocumentSearcher searcher;
@@ -42,16 +41,11 @@ public class DefaultDocumentSearchService implements DocumentSearchService {
 
     @Override
     public SearchResult searchDocuments(SearchRequest request) {
-        if ( LOGGER.isLoggable(Level.INFO) ) {
-            LOGGER.info(request.toString());
-        }
+        LOG.info(request.toString());
 
         SearchResult searchResult = searcher.searchDocuments(request);
 
-        if ( LOGGER.isLoggable(Level.INFO) ) {
-            LOGGER.info(
-                    "end service: solr result=" + request.getPhrase() + ", count=" + searchResult.getDocuments().size());
-        }
+        LOG.info("end service: solr result=" + request.getPhrase() + ", count=" + searchResult.getDocuments().size());
 
         return searchResult;
     }
@@ -59,27 +53,20 @@ public class DefaultDocumentSearchService implements DocumentSearchService {
     @Override
     public Resource loadDocument(String id, String query) {
         Document document = searcher.getDocument(id);
-        Resource resource = resourceLoader.findResource(document);
 
-        return resource;
+        return resourceLoader.findResource(document);
     }
 
     @Override
     public List<Facet> getFacets() {
-        if ( LOGGER.isLoggable(Level.INFO) ) {
-            LOGGER.info("start service...");
-        }
+        LOG.info("start service...");
 
-        List<Facet> facets = new ArrayList<>();
-        List<String> facetFields = facetManager.getFacetFields();
-        for( String facetField : facetFields ) {
-            Facet facet = searcher.getFacet(facetField);
-            facets.add(facet);
-        }
+        List<Facet> facets = facetManager.getFacetFields()
+                .stream()
+                .map((f)-> searcher.getFacet(f))
+                .collect(Collectors.toList());
 
-        if ( LOGGER.isLoggable(Level.INFO) ) {
-            LOGGER.info("end service: facet field=" + facets + ", facets=" + facets);
-        }
+        LOG.info("end service: facet field=" + facets + ", facets=" + facets);
 
         return facets;
     }

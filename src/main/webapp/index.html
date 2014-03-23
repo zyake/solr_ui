@@ -6,17 +6,22 @@
   <script src="js/external/simple-pac.js"></script>
   <script src="js/model/StreamContentModel.js"></script>
   <script src="js/model/FacetManager.js"></script>
+  <script src="js/model/CompositeModel.js"></script>
   <script src="js/presentation/SearchBox.js"></script>
   <script src="js/presentation/StreamContentView.js"></script>
   <script src="js/presentation/FacetView.js"></script>
+  <script src="js/presentation/SettingsForm.js"></script>
   <script src="js/presentation/CompositePresentation.js"></script>
   <script src="js/widget/SearchWidgetFactory.js"></script>
+  <script src="js/widget/SettingsWidgetFactory.js"></script>
   <script>
       "use strict";
       $(function() {
         var application = Application.create("application",
-            document.querySelector("#appContainer"),
-            { search: SearchWidgetFactory });
+            document.querySelector("#appContainer"), {
+            search: SearchWidgetFactory,
+            settings: SettingsWidgetFactory
+        });
 
         application.start("search");
       });
@@ -28,7 +33,7 @@
  <h1><img src="image/solr_ui.png"/></h1>
  <div id="right-upper-menu">
      <span class="content-area">
-        <a href="#top">Top</a> / <a href="#settings">Settings</a>
+        <a href="#search">Search</a> / <a href="#settings">Settings</a>
      </span>
  </div>
 

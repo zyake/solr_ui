@@ -1,16 +1,15 @@
 package my.apps.docsearchui.config;
 
 import my.apps.docsearchui.data.mappers.ConfigurationDataMapper;
-import org.apache.commons.collections.Predicate;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.function.Predicate;
 import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 /**
  * スレッドセーフなリポジトリのデフォルト実装。
@@ -19,7 +18,7 @@ import java.util.logging.Logger;
  */
 public class DefaultConfigurationRepository implements ConfigurationRepository {
 
-    private static final Logger LOGGER = Logger.getLogger(DefaultConfigurationRepository.class.getName());
+    private static final Log LOG = LogFactory.getLog(DefaultConfigurationRepository.class);
 
     @Autowired(required = true)
     private ConfigurationDataMapper dataMapper;
@@ -34,16 +33,12 @@ public class DefaultConfigurationRepository implements ConfigurationRepository {
     private final List<ConfigurationUpdateListener> listeners = new CopyOnWriteArrayList<>();
 
     public void initialize() {
-        if ( LOGGER.isLoggable(Level.INFO) ) {
-            LOGGER.info("start initializing...");
-        }
+        LOG.info("start initializing...");
 
         List<Configuration> configurations = dataMapper.getConfigurations();
         this.configurations.addAll(configurations);
 
-        if ( LOGGER.isLoggable(Level.INFO) ) {
-            LOGGER.info("end initializing: configs=" + configurations);
-        }
+        LOG.info("end initializing: configs=" + configurations);
     }
 
     @Override
@@ -52,74 +47,68 @@ public class DefaultConfigurationRepository implements ConfigurationRepository {
     }
 
     private Configuration getConfigurationInternal(String category, String configKey) {
-        if ( LOGGER.isLoggable(Level.FINE) ) {
-            LOGGER.fine(
-                    "start get configuration...: configurations=" + configurations +" , category=" + category + ", configKey=" + configKey);
+        if ( LOG.isDebugEnabled() ) {
+            LOG.debug(
+                    "start get configuration...: configurations=" + configurations + " , category=" + category + ", configKey=" + configKey);
         }
 
-        for ( Configuration configuration : configurations ) {
-            if ( LOGGER.isLoggable(Level.FINE) ) {
-                LOGGER.fine("first configuration=" + configuration);
+        Configuration matchedConfig = configurations
+                .stream()
+                .filter((c) -> c.getCategory().equals(category) && c.getConfigKey().equals(configKey))
+                .findFirst()
+                .get();
+        boolean matchedConfigFound = matchedConfig != null;
+        if ( matchedConfigFound ) {
+            Configuration clone = (Configuration) matchedConfig.clone();
+            if ( LOG.isDebugEnabled() ) {
+                LOG.debug("matched configuration found: " + clone);
             }
 
-            boolean isMatched = category.equals(configuration.getCategory()) && configKey.equals(configuration.getConfigKey());
-            if ( isMatched ) {
-                Configuration clone = (Configuration) configuration.clone();
-                if ( LOGGER.isLoggable(Level.FINE) ) {
-                    LOGGER.fine("matched configuration found: " + clone);
-                }
+            return clone;
+        } else {
+            LOG.warn("configuration not found: category=" + category + ", configKey=" + configKey);
 
-                return clone;
-            }
+            return null;
         }
-
-        if ( LOGGER.isLoggable(Level.WARNING) ) {
-            LOGGER.fine("configuration not found: category=" + category + ", configKey=" + configKey);
-        }
-
-        return null;
     }
 
     @Override
-    public List<Configuration> listConfigurations(Predicate predicate) {
-        List<Configuration> configurations = new ArrayList<>();
-        for ( Configuration configuration : this.configurations ) {
-            Configuration config = (Configuration) configuration.clone();
-            boolean matched = predicate.evaluate(config);
-            if ( matched ) {
-                configurations.add(config);
-            }
-        }
+    public List<Configuration> listConfigurations(Predicate<Configuration> predicate) {
+        List<Configuration> configurations = this.configurations
+                .stream()
+                .filter(predicate)
+                .map((c) -> (Configuration) c.clone())
+                .collect(Collectors.toList());
 
         return configurations;
     }
 
     @Override
     public List<String> listCategories() {
-        Set<String> categories = new HashSet<>();
-        for ( Configuration configuration : configurations ) {
-            categories.add(configuration.getCategory());
-        }
+        List<String> categories = this.configurations
+                .stream()
+                .map((c)-> c.getCategory())
+                .collect(Collectors.toList());
 
-        return new ArrayList<>(categories);
+        return categories;
     }
 
     @Override
-    public Configuration updateConfiguration(Configuration configuration) {
-        String category = configuration.getCategory();
-        String configKey = configuration.getConfigKey();
+    public Configuration updateConfiguration(Configuration newConfig) {
+        String category = newConfig.getCategory();
+        String configKey = newConfig.getConfigKey();
         Configuration config = getConfigurationInternal(category, configKey);
         if ( config == null ) {
             throw new ConfigurationException(
-                    "更新対象の設定が見つかりません: カテゴリ=" + configuration.getCategory());
+                    "更新対象の設定が見つかりません: カテゴリ=" + newConfig.getCategory());
         }
 
-        dataMapper.updateConfiguration(configuration);
+        dataMapper.updateConfiguration(newConfig);
         Configuration oldConfig = (Configuration) config.clone();
-        config.setConfigValue(configuration.getConfigValue());
+        config.setConfigValue(newConfig.getConfigValue());
         notifyConfiguration(oldConfig, config);
 
-        return (Configuration) config.clone();
+        return (Configuration) newConfig.clone();
     }
 
     /**
@@ -131,9 +120,10 @@ public class DefaultConfigurationRepository implements ConfigurationRepository {
      */
     private void notifyConfiguration(Configuration oldConfig, Configuration newConfig) {
         synchronized ( NOTIFICATION_LOCK ) {
-            for ( ConfigurationUpdateListener listener : listeners ) {
-                listener.update((Configuration) oldConfig.clone(), (Configuration) newConfig.clone());
-            }
+            this.listeners
+                    .stream()
+                    .forEach(
+                    (listener)-> listener.update((Configuration) oldConfig.clone(), (Configuration) newConfig.clone()));
         }
     }
 

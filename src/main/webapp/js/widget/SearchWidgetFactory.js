@@ -37,19 +37,16 @@ SearchWidgetFactory = function(id, elem, repository) {
 
           return model;
         }
-
     })
     .defineControls({
-
-        searchControl: function(id, widget, presentation, abstraction) {
+        searchControl: function(id, widget) {
             var searchBox = this.get("searchBox", widget.elem);
             var streamContentView = this.get("streamContentView", widget.elem);
             var compositeView = this.get("compositeView", [searchBox, streamContentView]);
             var model = this.get("searchBoxModel");
             return Control.create(id, widget, compositeView, model);
         },
-
-        facetControl: function(id, widget, presentation, abstraction) {
+        facetControl: function(id, widget) {
             var facetView = this.get("facetView", widget.elem);
             var model = this.get("facetModel");
             return Control.create(id, widget, facetView, model);

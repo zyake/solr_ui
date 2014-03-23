@@ -9,6 +9,8 @@ import my.apps.docsearchui.data.search.DocumentSearcher;
 import my.apps.docsearchui.data.search.SearchException;
 import my.apps.docsearchui.data.search.SearchResult;
 import my.apps.docsearchui.domain.Facet;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.client.solrj.SolrServerException;
@@ -20,14 +22,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.*;
 import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 /**
  * Solrでドキュメントを検索する実装。
  */
 public class SolrDocumentSearcher implements DocumentSearcher, ConfigurationUpdateListener {
 
-    private static final Logger LOGGER = Logger.getLogger(SolrDocumentSearcher.class.getName());
+    private static final Log LOG = LogFactory.getLog(SolrDocumentSearcher.class);
 
     @Autowired(required = true)
     private ConfigurationRepository configurationRepository;
@@ -36,19 +38,13 @@ public class SolrDocumentSearcher implements DocumentSearcher, ConfigurationUpda
 
     @Override
     public void init() {
-        if ( LOGGER.isLoggable(Level.INFO) ) {
-            LOGGER.info("start initializing...: " + configurationRepository.toString());
-        }
+        LOG.info("start initializing...: " + configurationRepository.toString());
 
         configurationRepository.addListener(this);
-
         Configuration configuration = configurationRepository.getConfiguration("global", "solr_url");
-
         renewSolrServer(configuration.getConfigValue());
 
-        if ( LOGGER.isLoggable(Level.INFO) ) {
-            LOGGER.info("end initializing: solr url=" + configuration.getConfigValue());
-        }
+        LOG.info("end initializing: solr url=" + configuration.getConfigValue());
     }
 
     @Override
@@ -69,12 +65,10 @@ public class SolrDocumentSearcher implements DocumentSearcher, ConfigurationUpda
         }
 
         QueryResponse response = query(solrQuery);
-        List<Document> resultDocs = new ArrayList<>();
-        for ( SolrDocument doc : response.getResults() ) {
-            Document parsedDocument = parseDocument(doc, response);
-            resultDocs.add(parsedDocument);
-        }
-
+        List<Document> resultDocs = response.getResults()
+                .stream()
+                .map((d)->parseDocument(d, response))
+                .collect(Collectors.toList());
         int timeMillsec = response.getQTime();
         int numFound = (int) response.getResults().getNumFound();
 
@@ -94,9 +88,7 @@ public class SolrDocumentSearcher implements DocumentSearcher, ConfigurationUpda
             throw new SearchException("document not found in Solr: id=" + id);
         }
 
-        Document document = parseDocument(queryResponse.getResults().get(0), queryResponse);
-
-        return document;
+        return parseDocument(queryResponse.getResults().get(0), queryResponse);
     }
 
     @Override
@@ -107,9 +99,9 @@ public class SolrDocumentSearcher implements DocumentSearcher, ConfigurationUpda
 
         QueryResponse response = query(solrQuery);
         Map<String, Integer> facets = new HashMap<>();
-        for ( FacetField.Count count: response.getFacetField(facetField).getValues() ) {
-            facets.put(count.getName(), (int) count.getCount());
-        }
+        response.getFacetField(facetField).getValues()
+                .stream()
+                .forEach((c)-> facets.put(c.getName(), (int) c.getCount()));
 
         return new Facet(facetField, facets);
     }
@@ -146,9 +138,7 @@ public class SolrDocumentSearcher implements DocumentSearcher, ConfigurationUpda
             matchedSection = toSingleString(res.getHighlighting().get(id).get("content"));
         }
 
-        Document document = new Document(title, id, author, lastModified, contentType, matchedSection);
-
-        return document;
+        return new Document(title, id, author, lastModified, contentType, matchedSection);
     }
 
     private QueryResponse query(SolrQuery query) {
