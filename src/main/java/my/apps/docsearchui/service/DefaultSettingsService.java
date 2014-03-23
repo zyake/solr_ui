@@ -2,6 +2,8 @@ package my.apps.docsearchui.service;
 
 import my.apps.docsearchui.config.Configuration;
 import my.apps.docsearchui.config.ConfigurationRepository;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,9 +14,9 @@ import java.util.logging.Logger;
 @Service
 public class DefaultSettingsService implements SettingsService {
 
-    private static final Logger LOG = Logger.getLogger(DefaultSettingsService.class.getName());
+    private static final Log LOG = LogFactory.getLog(DefaultSettingsService.class);
 
-    private static final Object UPDATE_LOCK = new Object();
+    private final Object UPDATE_LOCK = new Object();
 
     @Autowired(required = true)
     private ConfigurationRepository repository;
@@ -27,14 +29,14 @@ public class DefaultSettingsService implements SettingsService {
     @Override
     public List<Configuration> updateSettings(List<Configuration> configs) {
         synchronized ( UPDATE_LOCK ) {
-            if ( LOG.isLoggable(Level.FINE) ) {
-                LOG.fine("start updating... : configs=" + configs);
+            if ( LOG.isDebugEnabled() ) {
+                LOG.debug("start updating... : configs=" + configs);
             }
 
             configs.stream().forEach((c) -> repository.updateConfiguration(c));
 
-            if ( LOG.isLoggable(Level.FINE) ) {
-                LOG.fine("end updating: configs=" + configs);
+            if (LOG.isDebugEnabled() ) {
+                LOG.debug("end updating: configs=" + configs);
             }
 
             return configs;
