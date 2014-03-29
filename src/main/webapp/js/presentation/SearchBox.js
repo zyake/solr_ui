@@ -47,14 +47,14 @@ SearchBox = Object.create(Presentation, {
         var contentCount = successResult.contentCount;
         var contentFound = successResult.contentFound;
         var searchTime = successResult.searchTime;
-        this.resultSummary.innerHTML = "検索が完了しました.(マッチしたもの=" + contentFound +
-        ", 取得したもの=" + contentCount + ", 検索時間=" + searchTime + "ms)";
+        this.resultSummary.innerHTML = "Your search request has been completed.(matched count=" + contentFound +
+        ", retrieved count=" + contentCount + ", search time=" + searchTime + "ms)";
     }},
 
     renderFailureResult: { value: function(failureResult) {
         this.enableSubmitting();
         this.resultSummary.innerHTML =
-            "検索に失敗しました。サーバサイドで何らかのトラブルが発生した可能性があります。" +
+            "Your search request has been failed. A error may be occurred in the server side." +
             "(" + failureResult.message + ")";
     }},
 

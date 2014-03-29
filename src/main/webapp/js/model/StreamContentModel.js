@@ -6,8 +6,7 @@ StreamContentModel = Object.create(AbstractionProxy, {
         facetManager: { value: null, writable: true }
     }},
 
-    initialize: { value: function(control) {
-        AbstractionProxy.initialize.call(this, control);
+    doInitialize: { value: function() {
         this.reqHandler = AbstractionProxy.FOR_JSON;
         this.method = "POST";
         this.reset();

@@ -9,8 +9,7 @@ SettingsForm = Object.create(Presentation, {
         initializing: { value: true, writable: true }
     }},
 
-    initialize: { value: function(control) {
-        Presentation.initialize.call(this, control);
+    doInitialize: { value: function() {
         this.form = this.elem;
         this.formTable = this.query("tbody");
         this.loadingImg = this.query(".loadingImg");
@@ -48,13 +47,13 @@ SettingsForm = Object.create(Presentation, {
             this.initializing = false;
             return;
         }
-        this.formResult.innerHTML = "更新に成功しました。";
+        this.formResult.innerHTML = "Your update request has been succeeded.";
     }},
 
     renderFailureResult: { value: function(failureResult) {
         this.enableSubmitting();
         this.formResult.innerHTML =
-            "更新に失敗しました。サーバサイドで何らかのトラブルが発生した可能性があります。" +
+            "Your update request has been failed. A error may be occurred in the server side." +
             "(" + failureResult + ")";
     }},
 

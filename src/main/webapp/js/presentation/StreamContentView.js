@@ -8,8 +8,7 @@ StreamContentView = Object.create(Presentation, {
         prevPhrase: { value: "", writable: true }
     }},
 
-    initialize: { value: function(control){
-        Presentation.initialize.call(this, control);
+    doInitialize: { value: function(){
         this.content = this.query(".content");
         this.loadingImg = this.query(".loadingImg");
         this.retrieveLink = this.query(".retrieveLink");
@@ -49,8 +48,8 @@ StreamContentView = Object.create(Presentation, {
        this.retrieveFailed = true;
        this.loadingImg.style.display = "none";
        this.retrieveLink.innerHTML =
-       "コンテンツの取得に失敗しました。" +
-       "サーバ側で何らかの障害が発生した可能性があります。" +
+       "Content retrieving has been failed." +
+       "A error may be occurred in the server side." +
        "(" + failureResult.message + ")";
    }}
 });

@@ -2,8 +2,7 @@ FacetManager = Object.create(AbstractionProxy, {
 
     fields: { value: { facets: { value: [] } } },
 
-    initialize: { value: function(control) {
-        AbstractionProxy.initialize.call(this, control);
+    doInitialize: { value: function() {
         this.control.addEventRef(this.id, Id.onPresentation(this).load());
     }},
 

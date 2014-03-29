@@ -5,8 +5,7 @@ FacetView = Object.create(Presentation, {
         loadingImg: { value: null, writable: true }
     }},
 
-    initialize: { value: function(control) {
-        Presentation.initialize.call(this, control);
+    doInitialize: { value: function() {
         this.facet = this.query(".facet");
         this.loadingImg = this.query(".loadingImg");
         this.addEventRef(this.id, Id.onAbstraction(this).load());
