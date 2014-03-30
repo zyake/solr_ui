@@ -11,10 +11,11 @@ SearchBox = Object.create(Presentation, {
     initialize: { value: function(control) {
         Presentation.initialize.call(this, control);
         this.searchBoxEl = this.elem;
-        this.inputBox = this.query(".input");
-        this.resultSummary = this.query(".resultSummary");
-        this.submitButton = this.query(".submit");
-        this.loadingImg = this.query(".loading");
+        this.doQueries({
+            inputBox: ".input",
+            resultSummary: ".resultSummary",
+            submitButton: ".submit",
+            loadingImg: ".loadingImg"});
 
         this.on(this.submitButton, "click", this.submit);
         this.on(this.inputBox, "keypress", function(event) {
@@ -22,8 +23,9 @@ SearchBox = Object.create(Presentation, {
                 this.submit();
             }
         })
-        this.addEventRef(this.id, Id.onAbstraction(this).load());
-        this.addEventRef(this.id, Id.onAbstraction(this).failure());
+        this.event()
+            .ref().onAbstraction().load()
+            .ref().onAbstraction().failure();
     }},
 
     submit: { value: function() {
@@ -31,7 +33,7 @@ SearchBox = Object.create(Presentation, {
             return;
         }
         this.disableSubmitting();
-        this.raiseEvent(Id.onPresentation(this).start(), { phrase: this.inputBox.value, initialized: true });
+        this.event().raise().start({ phrase: this.inputBox.value, initialized: true });
     }},
 
     notify: { value: function(event, arg) {

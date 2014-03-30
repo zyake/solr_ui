@@ -6,11 +6,11 @@ FacetView = Object.create(Presentation, {
     }},
 
     doInitialize: { value: function() {
-        this.facet = this.query(".facet");
-        this.loadingImg = this.query(".loadingImg");
-        this.addEventRef(this.id, Id.onAbstraction(this).load());
-        this.addEventRef(this.id, Id.onAbstraction(this).failure());
-        this.raiseEvent(Id.onPresentation(this).start(), {});
+        this.doQueries({ facet: ".facet", loadingImg: ".loadingImg" });
+        this.event()
+            .ref().onAbstraction().load()
+            .ref().onAbstraction().failure()
+            .raise().start({});
     }},
 
     notify: { value: function(event, arg) {
@@ -45,7 +45,7 @@ FacetView = Object.create(Presentation, {
 
             var field = this.attributes["field"].nodeValue;
             var facet = this.attributes["facet"].nodeValue;
-            me.raiseEvent(Id.onPresentation(me).change(), { field: field, facet: facet, enabled: true });
+            me.event().raise().change({ field: field, facet: facet, enabled: true });
         };
 
         actionButton.disableAppended = function() {
@@ -54,7 +54,7 @@ FacetView = Object.create(Presentation, {
             this.addButton.style.display = "inline";
             var field = this.attributes["field"].nodeValue;
             var facet = this.attributes["facet"].nodeValue;
-            me.raiseEvent(Id.onPresentation(me).change(), { field: field, facet: facet, enabled: false });
+            me.event().raise().change({ field: field, facet: facet, enabled: false });
         };
 
         actionButton.onclick = function() {

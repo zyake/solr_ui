@@ -8,10 +8,11 @@ StreamContentView = Object.create(Presentation, {
         prevPhrase: { value: "", writable: true }
     }},
 
-    doInitialize: { value: function(){
-        this.content = this.query(".content");
-        this.loadingImg = this.query(".loadingImg");
-        this.retrieveLink = this.query(".retrieveLink");
+    doInitialize: { value: function() {
+        this.doQueries({
+            content: ".content",
+            loadingImg: ".loadingImg",
+            retrieveLink: ".retrieveLink"});
         this.retrieveInitialText = this.retrieveLink.innerHTML;
 
         this.on(this.retrieveLink, "click", function() {
@@ -20,11 +21,12 @@ StreamContentView = Object.create(Presentation, {
                 this.retrieveLink.innerHTML = this.retrieveInitialText;
             }
             this.loadingImg.style.display = "inline";
-            this.raiseEvent( Id.onPresentation(this).start(), { phrase: this.prevPhrase });
+            this.event().raise().start({ phrase: this.prevPhrase });
         });
 
-        this.addEventRef(this.id, Id.onAbstraction(this).load());
-        this.addEventRef(this.id, Id.onAbstraction(this).failure());
+        this.event()
+            .ref().onAbstraction().load()
+            .ref().onAbstraction().failure();
     }},
 
     notify: { value: function(event, arg) {

@@ -11,15 +11,17 @@ SettingsForm = Object.create(Presentation, {
 
     doInitialize: { value: function() {
         this.form = this.elem;
-        this.formTable = this.query("tbody");
-        this.loadingImg = this.query(".loadingImg");
-        this.submitButton = this.query("input[type=submit]");
-        this.formResult = this.query(".formResult");
+        this.doQueries({
+            formTable: "tbody",
+            loadingImg: ".loadingImg",
+            submitButton: "input[type=submit]",
+            formResult: ".formResult"});
         this.on(this.submitButton, "click", this.submit);
-        this.addEventRef(this.id, Id.onAbstraction(this).load());
-        this.addEventRef(this.id, Id.onAbstraction(this).failure());
 
-        this.raiseEvent(Id.onPresentation(this).start(), {});
+        this.event()
+            .ref().onAbstraction().load()
+            .ref().onAbstraction().failure()
+            .raise().start({});
     }},
 
     submit: { value: function(event) {
@@ -28,8 +30,7 @@ SettingsForm = Object.create(Presentation, {
             return;
         }
         this.disableSubmitting();
-        var settings = this.collectSettings();
-        this.raiseEvent(Id.onPresentation(this).load(), settings);
+        this.event().raise().load(this.collectSettings());
     }},
 
     notify: { value: function(event, arg) {
