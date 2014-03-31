@@ -3,15 +3,17 @@ FacetManager = Object.create(AbstractionProxy, {
     fields: { value: { facets: { value: [] } } },
 
     doInitialize: { value: function() {
-        this.control.addEventRef(this.id, Id.onPresentation(this).load());
+        this.event()
+            .ref().onPresentation().change(this.setFacet)
+            .ref().onPresentation().start(this.handleDefault);
     }},
 
     notify: { value: function(event, arg) {
-        if ( Id.onPresentation(this).change() == event ) {
-            this.setFacet(arg);
-        } else {
-            AbstractionProxy.notify.call(this, event, arg);
-        }
+       this.event().handle(event, arg);
+    }},
+
+    handleDefault: { value: function(arg,event) {
+        AbstractionProxy.notify.call(this, event, arg);
     }},
 
     setFacet: { value: function(arg) {

@@ -19,8 +19,8 @@ SettingsForm = Object.create(Presentation, {
         this.on(this.submitButton, "click", this.submit);
 
         this.event()
-            .ref().onAbstraction().load()
-            .ref().onAbstraction().failure()
+            .ref().onAbstraction().load(this.renderSuccessResult)
+            .ref().onAbstraction().failure(this.renderFailureResult)
             .raise().start({});
     }},
 
@@ -31,14 +31,6 @@ SettingsForm = Object.create(Presentation, {
         }
         this.disableSubmitting();
         this.event().raise().load(this.collectSettings());
-    }},
-
-    notify: { value: function(event, arg) {
-        if ( Id.onAbstraction(this).load() == event ) {
-            this.renderSuccessResult(arg);
-        } else if ( Id.onAbstraction(this).failure() == event ) {
-            this.renderFailureResult(arg);
-        }
     }},
 
     renderSuccessResult: { value: function(successResult) {

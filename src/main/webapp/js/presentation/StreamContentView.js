@@ -25,16 +25,8 @@ StreamContentView = Object.create(Presentation, {
         });
 
         this.event()
-            .ref().onAbstraction().load()
-            .ref().onAbstraction().failure();
-    }},
-
-    notify: { value: function(event, arg) {
-        if ( Id.onAbstraction(this).load() == event ) {
-            this.renderSuccessResult(arg);
-        } else if ( Id.onAbstraction(this).failure() == event ) {
-            this.renderFailureResult(arg);
-        }
+            .ref().onAbstraction().load(this.renderSuccessResult)
+            .ref().onAbstraction().failure(this.renderFailure);
     }},
 
     renderSuccessResult: { value: function(successResult) {

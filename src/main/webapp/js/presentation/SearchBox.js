@@ -24,8 +24,8 @@ SearchBox = Object.create(Presentation, {
             }
         })
         this.event()
-            .ref().onAbstraction().load()
-            .ref().onAbstraction().failure();
+            .ref().onAbstraction().load(this.renderSuccessResult)
+            .ref().onAbstraction().failure(this.renderFailureResult);
     }},
 
     submit: { value: function() {
@@ -34,14 +34,6 @@ SearchBox = Object.create(Presentation, {
         }
         this.disableSubmitting();
         this.event().raise().start({ phrase: this.inputBox.value, initialized: true });
-    }},
-
-    notify: { value: function(event, arg) {
-        if ( Id.onAbstraction(this).load() == event ) {
-            this.renderSuccessResult(arg);
-        } else if ( Id.onAbstraction(this).failure() == event ) {
-            this.renderFailureResult(arg);
-        }
     }},
 
     renderSuccessResult: { value: function(successResult) {

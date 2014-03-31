@@ -10,25 +10,31 @@ StreamContentModel = Object.create(AbstractionProxy, {
         this.reqHandler = AbstractionProxy.FOR_JSON;
         this.method = "POST";
         this.reset();
-        this.control.addEventRef(this.id, Id.onPresentation(this).change());
+        this.event()
+            .ref().onPresentation().change(this.setFilter)
+            .ref().onPresentation().start(this.retrieveContent);
     }},
 
     notify: { value: function(event, arg) {
-        if ( Id.onPresentation(this).change() == event ) {
-            this.filters[arg.key] = arg.value;
-        } else if ( Id.onPresentation(this).start() == event ) {
-         if ( arg.initialized ) {
-             this.reset();
-         }
-            var me = this;
-            this.fetch(event, {
-                phrase: arg.phrase,
-                start: me.start,
-                rows: me.rows,
-                initialized: arg.initialized || false,
-                fqueries: this.facetManager.getFacets() });
-            this.increment();
+        this.event().handle(event, arg);
+    }},
+
+    setFilter: { value: function(arg) {
+        this.filters[arg.key] = arg.value;
+    }},
+
+    retrieveContent: { value: function(arg, event) {
+        if ( arg.initialized ) {
+            this.reset();
         }
+
+        this.fetch(event, {
+            phrase: arg.phrase,
+            start: this.start,
+            rows: this.rows,
+            initialized: arg.initialized || false,
+            fqueries: this.facetManager.getFacets() });
+        this.increment();
     }},
 
     reset: { value: function() {

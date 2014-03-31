@@ -8,17 +8,9 @@ FacetView = Object.create(Presentation, {
     doInitialize: { value: function() {
         this.doQueries({ facet: ".facet", loadingImg: ".loadingImg" });
         this.event()
-            .ref().onAbstraction().load()
-            .ref().onAbstraction().failure()
+            .ref().onAbstraction().load(this.enableFacets)
+            .ref().onAbstraction().failure(this.renderFailure)
             .raise().start({});
-    }},
-
-    notify: { value: function(event, arg) {
-        if ( Id.onAbstraction(this).load() == event ) {
-            this.enableFacets(arg);
-        } else if ( Id.onAbstraction(this).failure() == event ) {
-            this.renderFailure(arg);
-        }
     }},
 
     enableFacets: { value: function(successResult) {

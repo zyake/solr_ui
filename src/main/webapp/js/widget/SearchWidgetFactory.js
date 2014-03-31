@@ -31,7 +31,7 @@ SearchWidgetFactory = function(id, elem, repository) {
         facetModel: function(id) {
           var reqResMap = {};
           reqResMap[Id.start()] = Id.load();
-          reqResMap[Id.change()] = {};
+          reqResMap[Id.change()] = Id.other();
           var model = FacetManager.create(id, reqResMap, FACET_URL);
           model.resHandler = AbstractionProxy.AS_TEXT;
 
@@ -40,9 +40,9 @@ SearchWidgetFactory = function(id, elem, repository) {
     })
     .defineControls({
         searchControl: function(id, widget) {
-            var searchBox = this.get("searchBox", widget.elem);
-            var streamContentView = this.get("streamContentView", widget.elem);
-            var compositeView = this.get("compositeView", [searchBox, streamContentView]);
+            var compositeView = this.get("compositeView",[
+                this.get("searchBox", widget.elem),
+                this.get("streamContentView", widget.elem)]);
             var model = this.get("searchBoxModel");
             return Control.create(id, widget, compositeView, model);
         },
