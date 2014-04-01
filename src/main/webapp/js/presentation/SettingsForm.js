@@ -19,8 +19,8 @@ SettingsForm = Object.create(Presentation, {
         this.on(this.submitButton, "click", this.submit);
 
         this.event()
-            .ref().onAbstraction().load(this.renderSuccessResult)
-            .ref().onAbstraction().failure(this.renderFailureResult)
+            .ref().onAbstraction().load(this.renderSuccess)
+            .ref().onAbstraction().failure(this.renderFailure)
             .raise().start({});
     }},
 
@@ -33,9 +33,9 @@ SettingsForm = Object.create(Presentation, {
         this.event().raise().load(this.collectSettings());
     }},
 
-    renderSuccessResult: { value: function(successResult) {
+    renderSuccess: { value: function(result) {
         this.enableSubmitting();
-        this.formTable.innerHTML = successResult;
+        this.formTable.innerHTML = result;
         if ( this.initializing ) {
             this.initializing = false;
             return;
@@ -43,40 +43,40 @@ SettingsForm = Object.create(Presentation, {
         this.formResult.innerHTML = "Your update request has been succeeded.";
     }},
 
-    renderFailureResult: { value: function(failureResult) {
+    renderFailure: { value: function(result) {
         this.enableSubmitting();
         this.formResult.innerHTML =
             "Your update request has been failed. A error may be occurred in the server side." +
-            "(" + failureResult + ")";
+            "(" + result + ")";
     }},
 
- 	enableSubmitting: { value: function() {
- 	    this.submitting = false;
- 	    this.submitButton.style.disable = false;
+    enableSubmitting: { value: function() {
+        this.submitting = false;
+        this.submitButton.style.disable = false;
         this.loadingImg.style.display = "none";
- 	}},
+    }},
 
- 	disableSubmitting: { value: function() {
+    disableSubmitting: { value: function() {
         this.submitting = true;
         this.submitButton.style.disable = true;
         this.loadingImg.style.display = "block";
         this.formResult.innerHTML = "";
     }},
 
- 	collectSettings: { value : function() {
- 	    var settings = [];
- 	    var dataElems = this.queryAll("tbody tr");
- 	    for ( outerIndex = 0 ; outerIndex < dataElems.length ; outerIndex ++ ) {
- 	        var dataElem = dataElems[outerIndex];
- 	        var inputs = dataElem.querySelectorAll("input[type=text]");
- 	        var setting = {};
+    collectSettings: { value : function() {
+         var settings = [];
+         var dataElems = this.queryAll("tbody tr");
+        for ( outerIndex = 0 ; outerIndex < dataElems.length ; outerIndex ++ ) {
+            var dataElem = dataElems[outerIndex];
+            var inputs = dataElem.querySelectorAll("input[type=text]");
+            var setting = {};
             for ( key in inputs ) {
                 var input = inputs[key];
                 setting[input.name] = input.value;
             }
             settings.push(setting);
- 	    }
+        }
 
- 	    return settings;
- 	}}
+        return settings;
+    }}
  });

@@ -18,19 +18,19 @@ FacetView = Object.create(Presentation, {
         this.facet.innerHTML = successResult;
 
         var me = this;
-        var actionButtons = this.facet.querySelectorAll(".actionButton");
-        for( key = 0 ; key < actionButtons.length ; key ++ ) {
-            var actionButton = actionButtons[key];
-            this.constructActionButton(actionButton);
+        var buttons = this.facet.querySelectorAll(".actionButton");
+        for( key = 0 ; key < buttons.length ; key ++ ) {
+            var button = buttons[key];
+            this.constructButton(button);
         }
     }},
 
- 	constructActionButton: { value: function(actionButton) {
- 	    var me = this;
-        actionButton.isAppended = false;
-        actionButton.addButton = actionButton.querySelector(".addImg");
-        actionButton.stopButton = actionButton.querySelector(".stopImg");
-        actionButton.enableAppended = function() {
+    constructButton: { value: function(button) {
+        var me = this;
+        button.isAppended = false;
+        button.addButton = button.querySelector(".addImg");
+        button.stopButton = button.querySelector(".stopImg");
+        button.enableAppended = function() {
             this.isAppended = true;
             this.stopButton.style.display = "inline";
             this.addButton.style.display = "none"
@@ -40,7 +40,7 @@ FacetView = Object.create(Presentation, {
             me.event().raise().change({ field: field, facet: facet, enabled: true });
         };
 
-        actionButton.disableAppended = function() {
+        button.disableAppended = function() {
             this.isAppended = false;
             this.stopButton.style.display = "none";
             this.addButton.style.display = "inline";
@@ -49,12 +49,12 @@ FacetView = Object.create(Presentation, {
             me.event().raise().change({ field: field, facet: facet, enabled: false });
         };
 
-        actionButton.onclick = function() {
-            if ( actionButton.isAppended ) {
-                actionButton.disableAppended();
+        button.onclick = function() {
+            if ( button.isAppended ) {
+                button.disableAppended();
             } else {
-                actionButton.enableAppended();
+                button.enableAppended();
             }
         };
- 	}},
+    }},
 });

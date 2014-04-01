@@ -25,25 +25,25 @@ StreamContentView = Object.create(Presentation, {
         });
 
         this.event()
-            .ref().onAbstraction().load(this.renderSuccessResult)
+            .ref().onAbstraction().load(this.renderSuccess)
             .ref().onAbstraction().failure(this.renderFailure);
     }},
 
-    renderSuccessResult: { value: function(successResult) {
-        if ( successResult.searchInitialized ) {
+    renderSuccess: { value: function(result) {
+        if ( result.searchInitialized ) {
             this.content.innerHTML = "";
         }
-        this.prevPhrase = successResult.searchPhrase;
+        this.prevPhrase = result.searchPhrase;
         this.loadingImg.style.display = "none";
-        this.content.innerHTML += successResult.responseBody;
+        this.content.innerHTML += result.responseBody;
    }},
 
-   renderFailure: { value: function(failureResult) {
+   renderFailure: { value: function(result) {
        this.retrieveFailed = true;
        this.loadingImg.style.display = "none";
        this.retrieveLink.innerHTML =
        "Content retrieving has been failed." +
        "A error may be occurred in the server side." +
-       "(" + failureResult.message + ")";
+       "(" + result.message + ")";
    }}
 });
