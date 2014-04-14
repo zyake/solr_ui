@@ -80,3 +80,5 @@ SettingsForm = Object.create(Presentation, {
         return settings;
     }}
  });
+
+Object.seal(SettingsForm);

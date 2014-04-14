@@ -13,9 +13,9 @@ FacetView = Object.create(Presentation, {
             .raise().start({});
     }},
 
-    enableFacets: { value: function(successResult) {
+    enableFacets: { value: function(result) {
         this.loadingImg.style.display = "none";
-        this.facet.innerHTML = successResult;
+        this.facet.innerHTML = result;
 
         var me = this;
         var buttons = this.facet.querySelectorAll(".actionButton");
@@ -23,6 +23,10 @@ FacetView = Object.create(Presentation, {
             var button = buttons[key];
             this.constructButton(button);
         }
+    }},
+
+    renderFailure: { value: function(result) {
+        this.facet.innerHTML = "Loading facets have been failed!( " + result + ")";
     }},
 
     constructButton: { value: function(button) {
@@ -58,3 +62,5 @@ FacetView = Object.create(Presentation, {
         };
     }},
 });
+
+Object.seal(FacetView);

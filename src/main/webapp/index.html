@@ -3,23 +3,25 @@
  <head>
   <title>Solr UI</title>
   <script src="js/external/jquery-2.1.0.js"></script>
-  <script src="js/external/simple-pac.js"></script>
+  <script src="js/external/PAC.js"></script>
   <script src="js/model/StreamContentModel.js"></script>
   <script src="js/model/FacetManager.js"></script>
   <script src="js/presentation/SearchBox.js"></script>
   <script src="js/presentation/StreamContentView.js"></script>
   <script src="js/presentation/FacetView.js"></script>
   <script src="js/presentation/SettingsForm.js"></script>
-  <script src="js/widget/SearchWidgetFactory.js"></script>
-  <script src="js/widget/SettingsWidgetFactory.js"></script>
+  <script src="js/widget/SearchWidget.js"></script>
+  <script src="js/widget/SettingsWidget.js"></script>
   <script>
       "use strict";
       $(function() {
-        var application = Application.create("application",
-            document.querySelector("#appContainer"), {
-            search: SearchWidgetFactory,
-            settings: SettingsWidgetFactory
-        });
+        var application = Application.create({
+            id: "application",
+            appElem: document.querySelector("#appContainer"),
+            widgetDef: {
+            search: SearchWidget,
+            settings: SettingsWidget
+        }});
 
         application.start("search");
       });

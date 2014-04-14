@@ -31,3 +31,5 @@ FacetManager = Object.create(AbstractionProxy, {
         return this.facets;
     }}
 });
+
+Object.seal(FacetManager);

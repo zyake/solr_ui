@@ -46,3 +46,5 @@ StreamContentModel = Object.create(AbstractionProxy, {
         this.start += this.rows;
     }}
 });
+
+Object.seal(StreamContentModel);

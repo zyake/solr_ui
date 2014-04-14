@@ -47,3 +47,5 @@ StreamContentView = Object.create(Presentation, {
        "(" + result.message + ")";
    }}
 });
+
+Object.seal(StreamContentView);

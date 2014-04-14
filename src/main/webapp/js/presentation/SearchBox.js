@@ -67,3 +67,5 @@ SearchBox = Object.create(Presentation, {
         this.resultSummary.innerHTML= "now searching...";
     }}
  });
+
+Object.seal(SearchBox);

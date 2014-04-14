@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="857511f7-20d7-40ff-a77b-662d7e7a0104" name="Default" comment="">
+    <list default="true" id="857511f7-20d7-40ff-a77b-662d7e7a0104" name="Default" comment="- Reduce event reference code">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/external/PAC.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/widget/SearchWidget.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/widget/SettingsWidget.js" />
+      <change type="DELETED" beforePath="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\js\external\simple-pac.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\js\widget\SearchWidgetFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\js\widget\SettingsWidgetFactory.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/model/FacetManager.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/model/FacetManager.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/presentation/FacetView.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/presentation/FacetView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/presentation/SearchBox.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/presentation/SearchBox.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/presentation/SettingsForm.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/presentation/SettingsForm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/presentation/StreamContentView.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/presentation/StreamContentView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/external/simple-pac.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/external/simple-pac.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr_ui.iml" afterPath="$PROJECT_DIR$/solr_ui.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="solr_ui.iws" />
@@ -106,101 +116,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FacetView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/presentation/FacetView.js">
+      <file leaf-file-name="AppConfiguration.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/AppConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
-              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1548" max-vertical-offset="2286">
+              <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
+      <file leaf-file-name="Configuration.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/Configuration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="2214">
-              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1260">
+              <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchBox.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/presentation/SearchBox.js">
+      <file leaf-file-name="DefaultConfigurationRepository.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/DefaultConfigurationRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="716" max-vertical-offset="1332">
-              <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="2610">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingsForm.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/presentation/SettingsForm.js">
+      <file leaf-file-name="ConfigurationDataMapper.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/mappers/ConfigurationDataMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="937" max-vertical-offset="1566">
-              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.26277372" vertical-offset="0" max-vertical-offset="685">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StreamContentView.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/presentation/StreamContentView.js">
+      <file leaf-file-name="ConfigurationException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1423671" vertical-offset="0" max-vertical-offset="972">
-              <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FacetManager.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/model/FacetManager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="55" max-vertical-offset="684">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchWidgetFactory.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/widget/SearchWidgetFactory.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1098">
-              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StreamContentModel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="954">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simple-pac.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/external/simple-pac.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7571" max-vertical-offset="18450">
-              <caret line="385" column="0" selection-start-line="385" selection-start-column="0" selection-end-line="385" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/template/settings.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="450">
-              <caret line="4" column="27" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="252">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -226,9 +186,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/webapp/js/model/CompositeModel.js" />
         <option value="$PROJECT_DIR$/src/test/TestIntegration.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/JettyIntegration.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/widget/SettingsWidgetFactory.js" />
         <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/mappers/ConfigurationDataMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/AppConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/DefaultConfigurationRepository.java" />
@@ -243,24 +201,78 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DefaultSettingsService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/template/settings.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/external/simple-pac.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/settings.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/template/search.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/settings.html" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/external/PAC.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/widget/SearchWidgetFactory.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/widget/SettingsWidgetFactory.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/model/FacetManager.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/presentation/FacetView.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/presentation/SearchBox.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/presentation/SettingsForm.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/presentation/StreamContentView.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/widget/SettingsWidget.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/widget/SearchWidget.js" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="solr_ui Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="solr_ui Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="solr_ui Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="clean" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+        </PATH_ELEMENT>
+      </PATH>
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
@@ -281,10 +293,8 @@
     <option name="jreName" value="#JAVA_HOME" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1297" />
-    <option name="height" value="776" />
+    <option name="width" value="1280" />
+    <option name="height" value="720" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -483,6 +493,8 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
@@ -507,7 +519,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -545,6 +556,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -686,9 +723,212 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docsearchui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docsearchui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docsearchui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="solr_ui">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="solr_ui">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main/webapp">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="solr_ui">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main/webapp">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="js">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="solr_ui">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main/webapp">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="js">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="widget">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="solr_ui">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main/webapp">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="js">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="presentation">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my.apps.docsearchui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -699,29 +939,33 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.lastSelected" value="editor.preferences.tabs" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/solr_ui.war" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="my.apps.docsearchui.search.solr" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
+    <key name="OPEN_URL_DIALOG">
+      <recent name="https://fwk.backlog.jp/svn/EDU_1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\js\external" />
@@ -735,19 +979,19 @@
       <recent name="my.apps.docsearchui.resource" />
       <recent name="my.apps.docsearchui.search" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="my.apps.docsearchui.data.search" />
-      <recent name="my.apps.docsearchui.search" />
-      <recent name="my.apps.docsearchui.data" />
-      <recent name="my.apps.docsearchui" />
-      <recent name="my.apps.docsearchui.search.solr" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\js\external" />
       <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\template" />
       <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp\WEB-INF\jsp" />
       <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\webapp" />
       <recent name="C:\Users\zyake\Documents\GitHub\solr_ui\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="my.apps.docsearchui.data.search" />
+      <recent name="my.apps.docsearchui.search" />
+      <recent name="my.apps.docsearchui.data" />
+      <recent name="my.apps.docsearchui" />
+      <recent name="my.apps.docsearchui.search.solr" />
     </key>
   </component>
   <component name="RunManager" selected="Jetty Server.DS Lite">
@@ -985,21 +1229,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JettyConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings>
@@ -1016,6 +1245,21 @@
       </server-settings>
       <predefined_log_file id="Jetty" enabled="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1039,18 +1283,15 @@
       <method />
     </configuration>
     <configuration default="false" name="DS Lite" type="JettyConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Jetty 9.1.3.v20140225" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.port=39600 " />
       <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <file path="$PROJECT_DIR$/target/solr_ui.war">
-          <settings DEPLOYMENT_METHOD="contexts" />
-        </file>
-      </deployment>
+      <deployment />
       <server-settings>
         <data>
           <option name="configFiles">
             <list>
               <JettyConfigFile>
-                <option name="active" value="true" />
                 <option name="path" value="modules\jmx.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
@@ -1260,6 +1501,21 @@
       <workItem from="1396274874108" duration="36000" />
       <workItem from="1396275735671" duration="4849000" />
       <workItem from="1396354445485" duration="359000" />
+      <workItem from="1396445461776" duration="387000" />
+      <workItem from="1396446568048" duration="70000" />
+      <workItem from="1396446678025" duration="587000" />
+      <workItem from="1396698510320" duration="5527000" />
+      <workItem from="1396716116800" duration="28000" />
+      <workItem from="1396750623346" duration="10219000" />
+      <workItem from="1396775436686" duration="4258000" />
+      <workItem from="1396967002485" duration="1003000" />
+      <workItem from="1397045158628" duration="557000" />
+      <workItem from="1397137767312" duration="1473000" />
+      <workItem from="1397139278666" duration="393000" />
+      <workItem from="1397139687133" duration="3288000" />
+      <workItem from="1397372677394" duration="109000" />
+      <workItem from="1397391796204" duration="3651000" />
+      <workItem from="1397469561340" duration="753000" />
     </task>
     <task id="LOCAL-00001" summary="Implements the settings page">
       <created>1396099726843</created>
@@ -1285,7 +1541,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57097000" />
+    <option name="totallyTimeSpent" value="89400000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1308,52 +1564,53 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1297" height="776" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="720" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32618684" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24899599" sideWeight="0.6707504" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40441176" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969605" sideWeight="0.49959967" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23058252" sideWeight="0.4" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969605" sideWeight="0.5004003" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32794118" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24819277" sideWeight="0.67230767" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20145631" sideWeight="0.67230767" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32208836" sideWeight="0.3985294" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5632353" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22168675" sideWeight="0.6" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48235294" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23359375" sideWeight="0.49642345" order="5" side_tool="true" content_ui="tabs" x="112" y="189" width="265" height="653" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.56080115" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23359375" sideWeight="0.5035765" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4434907" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21365462" sideWeight="0.6014706" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21365462" sideWeight="0.6014706" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32904148" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2489992" sideWeight="0.67230767" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32647058" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.331307" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298639" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31393567" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.330781" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298639" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969605" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24899599" sideWeight="0.6707504" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969605" sideWeight="0.5004003" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24899599" sideWeight="0.6707504" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969605" sideWeight="0.5004003" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923076" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1372,8 +1629,8 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3323077" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24819855" sideWeight="0.67230767" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43456376" sideWeight="0.3323077" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
@@ -1445,17 +1702,11 @@
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/AppConfiguration.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="27" />
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1463,78 +1714,24 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/4.1/asm-4.1.jar!/org/objectweb/asm/ClassReader.class">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/widget/SearchWidget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1615">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1281">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-util/9.1.3.v20140225/jetty-util-9.1.3.v20140225.jar!/org/eclipse/jetty/util/thread/QueuedThreadPool.class">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.84" vertical-offset="0" max-vertical-offset="1989">
-          <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1113">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/asm-4.1-sources.jar!/org/objectweb/asm/ClassReader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.12" vertical-offset="493" max-vertical-offset="36771">
-          <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
-          <folding>
-            <element signature="e#15507#15508#0" expanded="true" />
-            <element signature="e#15549#15550#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-webapp/9.1.3.v20140225/jetty-webapp-9.1.3.v20140225-sources.jar!/org/eclipse/jetty/webapp/WebAppContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7181" max-vertical-offset="22576">
-          <caret line="506" column="0" selection-start-line="506" selection-start-column="0" selection-end-line="506" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-util/9.1.3.v20140225/jetty-util-9.1.3.v20140225.jar!/org/eclipse/jetty/util/component/ContainerLifeCycle.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.48" vertical-offset="1108" max-vertical-offset="1938">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-annotations/9.1.3.v20140225/jetty-annotations-9.1.3.v20140225-sources.jar!/org/eclipse/jetty/annotations/ClassInheritanceHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="292" max-vertical-offset="1122">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/widget/SettingsWidgetFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="748">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-util/9.1.3.v20140225/jetty-util-9.1.3.v20140225.jar!/org/eclipse/jetty/util/resource/FileResource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1173">
-          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-annotations/9.1.3.v20140225/jetty-annotations-9.1.3.v20140225-sources.jar!/org/eclipse/jetty/annotations/AnnotationParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="17680">
-          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-annotations/9.1.3.v20140225/jetty-annotations-9.1.3.v20140225-sources.jar!/org/eclipse/jetty/annotations/AnnotationConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="383" max-vertical-offset="16677">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="525">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1555,54 +1752,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/mappers/ConfigurationDataMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <caret line="10" column="85" selection-start-line="10" selection-start-column="85" selection-end-line="10" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/DefaultConfigurationRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="741" max-vertical-offset="2397">
-          <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="238">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/search/solr/SolrDocumentSearcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1086" max-vertical-offset="2703">
           <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar!/org/apache/commons/logging/impl/Jdk14Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.88" vertical-offset="636" max-vertical-offset="986">
-          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/SearchDocumentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="561">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/SettingsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="578">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1621,9 +1775,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="782">
           <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
@@ -1637,25 +1788,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/service/DefaultDocumentSearchService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="1088">
           <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/DownloadDocumentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1694,28 +1831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2142">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6296296" vertical-offset="226" max-vertical-offset="828">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="972">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="382">
@@ -1727,14 +1842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/AppConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1479">
-          <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1752,32 +1859,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/facets.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="270">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/documents.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="342">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="468">
-          <caret line="2" column="78" selection-start-line="2" selection-start-column="78" selection-end-line="2" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/template/settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="450">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="30" />
-          <folding />
+        <state vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="450">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1785,70 +1870,303 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="2214">
           <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="https://fwk.backlog.jp/svn/EDU_1">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://C:/Tools/solr_ui_dist/etc/jetty-jmx.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Tools/solr_ui_dist/etc/jetty-jmx-remote.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="2142">
+          <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/widget/SearchWidgetFactory.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="1098">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        <state vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="468">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/DownloadDocumentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/SettingsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/GetFacetsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/controllers/SearchDocumentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="561">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/external/simple-pac.js">
+    <entry file="uml://MAVEN/solr_ui:solr_ui:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>solr_ui:solr_ui:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">org.codehaus.jackson:jackson-mapper-asl:jar:1.9.9/org.codehaus.jackson:jackson-core-asl:jar:1.9.9</node>
+            <node x="" y="">org.apache.solr:solr-solrj:jar:4.0.0/org.codehaus.woodstox:wstx-asl:jar:3.2.7</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-context:jar:4.0.2.RELEASE/org.springframework:spring-aop:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.apache.solr:solr-solrj:jar:4.0.0/org.slf4j:slf4j-api:jar:1.6.4</node>
+            <node x="" y="">org.apache.solr:solr-solrj:jar:4.0.0</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:4.0.2.RELEASE/org.springframework:spring-beans:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.eclipse.jetty:jetty-annotations:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-plus:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-jndi:jar:9.1.3.v20140225</node>
+            <node x="" y="">org.apache.solr:solr-solrj:jar:4.0.0/org.apache.httpcomponents:httpclient:jar:4.1.3</node>
+            <node x="" y="">org.eclipse.jetty:jetty-webapp:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-servlet:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-security:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-server:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-io:jar:9.1.3.v20140225</node>
+            <node x="" y="">org.eclipse.jetty:jetty-webapp:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-servlet:jar:9.1.3.v20140225</node>
+            <node x="" y="">org.apache.solr:solr-solrj:jar:4.0.0/org.apache.httpcomponents:httpclient:jar:4.1.3/org.apache.httpcomponents:httpcore:jar:4.1.4</node>
+            <node x="" y="">org.mybatis:mybatis:jar:3.1.1</node>
+            <node x="" y="">org.eclipse.jetty:jetty-webapp:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-servlet:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-security:jar:9.1.3.v20140225</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:4.0.2.RELEASE/org.springframework:spring-tx:jar:4.0.2.RELEASE/org.springframework:spring-beans:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.eclipse.jetty:jetty-annotations:jar:9.1.3.v20140225/org.ow2.asm:asm-commons:jar:4.1/org.ow2.asm:asm-tree:jar:4.1/org.ow2.asm:asm:jar:4.1</node>
+            <node x="" y="">org.eclipse.jetty:jetty-annotations:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-plus:jar:9.1.3.v20140225</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-core:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.eclipse.jetty:jetty-annotations:jar:9.1.3.v20140225/org.ow2.asm:asm:jar:4.1</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-web:jar:4.0.2.RELEASE/org.springframework:spring-aop:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-web:jar:4.0.2.RELEASE/org.springframework:spring-context:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:4.0.2.RELEASE/org.springframework:spring-tx:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.eclipse.jetty:jetty-webapp:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-xml:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-util:jar:9.1.3.v20140225</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-expression:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.eclipse.jetty:jetty-webapp:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-servlet:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-security:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-server:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-io:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-util:jar:9.1.3.v20140225</node>
+            <node x="" y="">commons-collections:commons-collections:jar:3.2.1</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-context:jar:4.0.2.RELEASE/org.springframework:spring-expression:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.eclipse.jetty:jetty-annotations:jar:9.1.3.v20140225/org.ow2.asm:asm-commons:jar:4.1</node>
+            <node x="" y="">org.codehaus.jackson:jackson-mapper-asl:jar:1.9.9</node>
+            <node x="" y="">org.mybatis:mybatis-spring:jar:1.2.1</node>
+            <node x="" y="">org.eclipse.jetty:jetty-webapp:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-xml:jar:9.1.3.v20140225</node>
+            <node x="" y="">org.eclipse.jetty:jetty-webapp:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-servlet:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-security:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-server:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-http:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-util:jar:9.1.3.v20140225</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-web:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.eclipse.jetty:jetty-annotations:jar:9.1.3.v20140225</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-context:jar:4.0.2.RELEASE/org.springframework:spring-core:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:4.0.2.RELEASE/org.springframework:spring-core:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.eclipse.jetty:jetty-webapp:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-servlet:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-security:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-server:jar:9.1.3.v20140225/javax.servlet:javax.servlet-api:jar:3.1.0</node>
+            <node x="" y="">javax.inject:javax.inject:jar:1</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-core:jar:4.0.2.RELEASE/commons-logging:commons-logging:jar:1.1.3</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-context:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-beans:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.eclipse.jetty:jetty-webapp:jar:9.1.3.v20140225</node>
+            <node x="" y="">org.apache.solr:solr-solrj:jar:4.0.0/org.apache.httpcomponents:httpmime:jar:4.1.3/org.apache.httpcomponents:httpcore:jar:4.1.4</node>
+            <node x="" y="">org.eclipse.jetty:jetty-start:jar:9.1.3.v20140225</node>
+            <node x="" y="">org.eclipse.jetty:jetty-webapp:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-servlet:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-security:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-server:jar:9.1.3.v20140225</node>
+            <node x="" y="">org.codehaus.jackson:jackson-core-asl:jar:1.9.9</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:4.0.2.RELEASE/org.springframework:spring-tx:jar:4.0.2.RELEASE/org.springframework:spring-core:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.slf4j:slf4j-api:jar:1.6.6</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-context:jar:4.0.2.RELEASE/org.springframework:spring-aop:jar:4.0.2.RELEASE/org.springframework:spring-beans:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.apache.solr:solr-solrj:jar:4.0.0/commons-io:commons-io:jar:2.1</node>
+            <node x="" y="">com.h2database:h2:jar:1.3.166</node>
+            <node x="" y="">org.eclipse.jetty:jetty-annotations:jar:9.1.3.v20140225/org.ow2.asm:asm-commons:jar:4.1/org.ow2.asm:asm-tree:jar:4.1</node>
+            <node x="" y="">org.apache.solr:solr-solrj:jar:4.0.0/org.apache.zookeeper:zookeeper:jar:3.3.6</node>
+            <node x="" y="">org.apache.solr:solr-solrj:jar:4.0.0/org.apache.httpcomponents:httpclient:jar:4.1.3/commons-codec:commons-codec:jar:1.4</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-context:jar:4.0.2.RELEASE/org.springframework:spring-beans:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-web:jar:4.0.2.RELEASE/org.springframework:spring-beans:jar:4.0.2.RELEASE</node>
+            <node x="" y="">javax.servlet:servlet-api:jar:2.5</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-beans:jar:4.0.2.RELEASE/org.springframework:spring-core:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.eclipse.jetty:jetty-annotations:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-webapp:jar:9.1.3.v20140225</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-context:jar:4.0.2.RELEASE/org.springframework:spring-aop:jar:4.0.2.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+            <node x="" y="">org.eclipse.jetty:jetty-annotations:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-plus:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-webapp:jar:9.1.3.v20140225</node>
+            <node x="" y="">org.apache.solr:solr-solrj:jar:4.0.0/org.apache.httpcomponents:httpmime:jar:4.1.3</node>
+            <node x="" y="">junit:junit:jar:4.10/org.hamcrest:hamcrest-core:jar:1.1</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-context:jar:4.0.2.RELEASE/org.springframework:spring-aop:jar:4.0.2.RELEASE/org.springframework:spring-core:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-expression:jar:4.0.2.RELEASE/org.springframework:spring-core:jar:4.0.2.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE/org.springframework:spring-web:jar:4.0.2.RELEASE/org.springframework:spring-core:jar:4.0.2.RELEASE</node>
+            <node x="" y="">junit:junit:jar:4.10</node>
+            <node x="" y="">org.eclipse.jetty:jetty-annotations:jar:9.1.3.v20140225/javax.annotation:javax.annotation-api:jar:1.2</node>
+            <node x="" y="">commons-io:commons-io:jar:2.4</node>
+            <node x="" y="">org.eclipse.jetty:jetty-webapp:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-servlet:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-security:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-server:jar:9.1.3.v20140225/org.eclipse.jetty:jetty-http:jar:9.1.3.v20140225</node>
+            <node x="" y="">solr_ui:solr_ui:1.0-SNAPSHOT</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.3187361419068736" x="425.0" y="992.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/documents.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7571" max-vertical-offset="18450">
-          <caret line="385" column="0" selection-start-line="385" selection-start-column="0" selection-end-line="385" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="342">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/presentation/FacetView.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/facets.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/presentation/SearchBox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="716" max-vertical-offset="1332">
-          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/presentation/SettingsForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="937" max-vertical-offset="1566">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding />
+        <state vertical-scroll-proportion="0.24161074" vertical-offset="0" max-vertical-offset="596">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/model/FacetManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/model/StreamContentModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="37" max-vertical-offset="954">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="990">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/presentation/FacetView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="592" max-vertical-offset="1278">
+          <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/presentation/SettingsForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="916" max-vertical-offset="1602">
+          <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/presentation/StreamContentView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1423671" vertical-offset="0" max-vertical-offset="972">
-          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1008">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/presentation/SearchBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1368">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="864">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/widget/SettingsWidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/widget/SearchWidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="1188">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/external/PAC.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="25074">
+          <caret line="190" column="35" selection-start-line="190" selection-start-column="35" selection-end-line="190" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/domain/Facet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/domain/Document.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/AppConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1566">
+          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/ConfigurationException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="274" max-vertical-offset="972">
+          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/config/DefaultConfigurationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2376">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/apps/docsearchui/data/mappers/ConfigurationDataMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26277372" vertical-offset="0" max-vertical-offset="685">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding />
         </state>
       </provider>
